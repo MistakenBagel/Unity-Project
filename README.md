@@ -7,3 +7,9 @@ LISZVBUIRPEaf ghvwurFDC
 Feeling frubilant and orpluous
 
 What does Frubilant and Orpluous mean?
+
+*Dictionary*
+
+Frubilant - One who experiences frube
+
+orpluous - The act of Orpling
