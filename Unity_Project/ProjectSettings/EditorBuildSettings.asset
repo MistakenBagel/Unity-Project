@@ -6,17 +6,35 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Settings Menu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 592caf72af1703f4a86304d01b6850dd
   - enabled: 1
-    path: Assets/Scenes/flubluh.unity
+    path: Assets/Scenes/Level selection/Stages/flubluh.unity
     guid: ef484cf3302a59e48a95b638084aac93
   - enabled: 1
     path: Assets/Scenes/Settings Menu.unity
-    guid: 6bb63f6e7343af0458ceef07b30b0f36
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Level selection/Level 1 select.unity
+    guid: c41bce9d5800ebe47a188ea5cce787cc
+  - enabled: 1
+    path: Assets/Scenes/Level selection/Level 2 select.unity
+    guid: 15349ed98f07c0f489dea10d6a108677
+  - enabled: 1
+    path: Assets/Scenes/Level selection/Level 3 select.unity
+    guid: f5d43670b91178c41a4b113c6ccb4db3
+  - enabled: 1
+    path: Assets/Scenes/Level selection/Level 4 select.unity
+    guid: c901f2482ed126a4c858167aa60a0539
+  - enabled: 1
+    path: Assets/Scenes/Level selection/Level 5 select.unity
+    guid: fa0eeded95526414b90e8640d72cc3ac
+  - enabled: 1
+    path: Assets/Scenes/Level selection/Level 6 select.unity
+    guid: 9b730a652fe9abe4997fc15f032b2c53
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

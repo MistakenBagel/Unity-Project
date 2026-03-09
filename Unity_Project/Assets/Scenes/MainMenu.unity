@@ -1330,7 +1330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37847f146c449f345a744a519a3574d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoadSceneButton
-  sceneName: flubluh
+  sceneName: Level 1 select
 --- !u!1 &1410533442
 GameObject:
   m_ObjectHideFlags: 0
