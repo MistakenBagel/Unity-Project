@@ -1,27 +1,34 @@
 using UnityEngine;
+using UnityEngine;
 
 public class PlayerController2D : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float jumpForce = 7f;
-    public float crouchScale = 0.5f;
+
+    public Collider2D standingCollider;
+    public Collider2D crouchCollider;
+
+    public float jumpCutMultiplier = 0.5f;
 
     private Rigidbody2D rb;
     private bool isGrounded = true;
-    private Vector3 originalScale;
     private bool isCrouching = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        originalScale = transform.localScale;
+
+        standingCollider.enabled = true;
+        crouchCollider.enabled = false;
     }
 
     void Update()
     {
+        Crouch();
         Move();
         Jump();
-        Crouch();
+        BetterJump();
     }
 
     void Move()
@@ -37,7 +44,9 @@ public class PlayerController2D : MonoBehaviour
             move = 1;
         }
 
-        rb.linearVelocity = new Vector2(move * moveSpeed, rb.linearVelocity.y);
+        float currentSpeed = isCrouching ? moveSpeed * 0.5f : moveSpeed;
+
+        rb.linearVelocity = new Vector2(move * currentSpeed, rb.linearVelocity.y);
     }
 
     void Jump()
@@ -49,13 +58,22 @@ public class PlayerController2D : MonoBehaviour
         }
     }
 
+    void BetterJump()
+    {
+        if (Input.GetKeyUp(KeyCode.Space) && rb.linearVelocity.y > 0)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * jumpCutMultiplier);
+        }
+    }
+
     void Crouch()
     {
         if (Input.GetKey(KeyCode.S))
         {
             if (!isCrouching)
             {
-                transform.localScale = new Vector3(originalScale.x, originalScale.y * crouchScale, originalScale.z);
+                standingCollider.enabled = false;
+                crouchCollider.enabled = true;
                 isCrouching = true;
             }
         }
@@ -63,7 +81,8 @@ public class PlayerController2D : MonoBehaviour
         {
             if (isCrouching)
             {
-                transform.localScale = originalScale;
+                standingCollider.enabled = true;
+                crouchCollider.enabled = false;
                 isCrouching = false;
             }
         }
