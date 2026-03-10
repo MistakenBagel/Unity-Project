@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine;
 
 public class PlayerController2D : MonoBehaviour
 {
