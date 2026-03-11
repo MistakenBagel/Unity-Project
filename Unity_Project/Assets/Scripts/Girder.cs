@@ -18,7 +18,8 @@ public class Girder : MonoBehaviour
 
     void SpawnGirder()
     {
-        float randomX = Random.Range(minX, maxX);
+        int randomStep = Random.Range(Mathf.RoundToInt(minX), Mathf.RoundToInt(maxX));
+        float randomX = randomStep + 0.5f;
 
         Vector2 spawnPosition = new Vector2(randomX, spawnY);
 

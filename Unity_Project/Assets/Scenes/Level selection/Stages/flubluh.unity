@@ -153,7 +153,7 @@ MonoBehaviour:
   maxX: 0.5
   spawnY: 7
   spawnInterval: 7
-  girderLifetime: 3
+  girderLifetime: 0
 --- !u!4 &373088903
 Transform:
   m_ObjectHideFlags: 0
