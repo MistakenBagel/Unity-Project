@@ -402,7 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37847f146c449f345a744a519a3574d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoadSceneButton
-  sceneName: flubluh
+  sceneName: 1
 --- !u!1 &445003085
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,8 +592,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 447245541}
-        m_TargetAssemblyTypeName: LoadSceneButton, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_TargetAssemblyTypeName: SceneIncrementButton, Assembly-CSharp
+        m_MethodName: AddSceneValue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -650,10 +650,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 447245536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37847f146c449f345a744a519a3574d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 49f5e514b17f9c94e9d3ebf4d18a931b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LoadSceneButton
-  sceneName: Level 2 select
+  m_EditorClassIdentifier: Assembly-CSharp::SceneIncrementButton
+  playButtonScript: {fileID: 183431868}
+  maxSceneNumber: 6
 --- !u!1 &467754182
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,8 +832,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1560765748}
-        m_TargetAssemblyTypeName: LoadSceneButton, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_TargetAssemblyTypeName: SceneDecrementButton, Assembly-CSharp
+        m_MethodName: SubtractSceneValue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -889,10 +890,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1560765743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37847f146c449f345a744a519a3574d7, type: 3}
+  m_Script: {fileID: 11500000, guid: bf1e2fcae8b6bd643bd4b31b8b378e6e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LoadSceneButton
-  sceneName: Level 6 Select
+  m_EditorClassIdentifier: Assembly-CSharp::SceneDecrementButton
+  playButtonScript: {fileID: 183431868}
+  minSceneNumber: 1
 --- !u!1 &1583929735
 GameObject:
   m_ObjectHideFlags: 0
