@@ -11,15 +11,20 @@ public class PlayerController2D : MonoBehaviour
     public float jumpCutMultiplier = 0.5f;
 
     private Rigidbody2D rb;
+    private Animator animator;
+
     private bool isGrounded = true;
     private bool isCrouching = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
         standingCollider.enabled = true;
         crouchCollider.enabled = false;
+
+        animator.Play("Idle");
     }
 
     void Update()
@@ -28,11 +33,11 @@ public class PlayerController2D : MonoBehaviour
         Move();
         Jump();
         BetterJump();
+        UpdateAnimation();
     }
 
     void LateUpdate()
     {
-        // Clamp player position between x = 0.5 and x = 11
         Vector3 pos = transform.position;
         pos.x = Mathf.Clamp(pos.x, 0.5f, 11f);
         transform.position = pos;
@@ -43,19 +48,15 @@ public class PlayerController2D : MonoBehaviour
         float move = 0;
 
         if (Input.GetKey(KeyCode.A))
-        {
             move = -1;
-        }
+
         if (Input.GetKey(KeyCode.D))
-        {
             move = 1;
-        }
 
         float currentSpeed = isCrouching ? moveSpeed * 0.5f : moveSpeed;
 
         rb.linearVelocity = new Vector2(move * currentSpeed, rb.linearVelocity.y);
 
-        // Flip sprite depending on movement direction
         if (move != 0)
         {
             Vector3 scale = transform.localScale;
@@ -70,6 +71,8 @@ public class PlayerController2D : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isGrounded = false;
+
+            animator.Play("Jump");
         }
     }
 
@@ -90,6 +93,8 @@ public class PlayerController2D : MonoBehaviour
                 standingCollider.enabled = false;
                 crouchCollider.enabled = true;
                 isCrouching = true;
+
+                animator.SetBool("isCrouched", true);
             }
         }
         else
@@ -99,7 +104,39 @@ public class PlayerController2D : MonoBehaviour
                 standingCollider.enabled = true;
                 crouchCollider.enabled = false;
                 isCrouching = false;
+
+                animator.SetBool("isCrouched", false);
             }
+        }
+    }
+
+    void UpdateAnimation()
+    {
+        if (!isGrounded)
+            return;
+
+        float speed = Mathf.Abs(rb.linearVelocity.x);
+
+        if (isCrouching)
+        {
+            if (speed > 0.1f)
+            {
+                animator.Play("Crawl");
+            }
+            else
+            {
+                animator.Play("Crouch");
+            }
+            return;
+        }
+
+        if (speed > 0.1f)
+        {
+            animator.Play("Walk");
+        }
+        else
+        {
+            animator.Play("Idle");
         }
     }
 
