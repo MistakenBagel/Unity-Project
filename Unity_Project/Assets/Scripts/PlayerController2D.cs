@@ -30,6 +30,14 @@ public class PlayerController2D : MonoBehaviour
         BetterJump();
     }
 
+    void LateUpdate()
+    {
+        // Clamp player position between x = 0.5 and x = 11
+        Vector3 pos = transform.position;
+        pos.x = Mathf.Clamp(pos.x, 0.5f, 11f);
+        transform.position = pos;
+    }
+
     void Move()
     {
         float move = 0;
@@ -46,6 +54,14 @@ public class PlayerController2D : MonoBehaviour
         float currentSpeed = isCrouching ? moveSpeed * 0.5f : moveSpeed;
 
         rb.linearVelocity = new Vector2(move * currentSpeed, rb.linearVelocity.y);
+
+        // Flip sprite depending on movement direction
+        if (move != 0)
+        {
+            Vector3 scale = transform.localScale;
+            scale.x = Mathf.Abs(scale.x) * (move > 0 ? 1 : -1);
+            transform.localScale = scale;
+        }
     }
 
     void Jump()
