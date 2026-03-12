@@ -39,7 +39,7 @@ public class PlayerController2D : MonoBehaviour
     void LateUpdate()
     {
         Vector3 pos = transform.position;
-        pos.x = Mathf.Clamp(pos.x, 0.5f, 11f);
+        pos.x = Mathf.Clamp(pos.x, 0.5f, 9.5f);
         transform.position = pos;
     }
 
