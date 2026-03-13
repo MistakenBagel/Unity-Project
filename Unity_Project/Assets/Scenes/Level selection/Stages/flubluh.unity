@@ -119,6 +119,58 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &58255407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 58255408}
+  - component: {fileID: 58255409}
+  m_Layer: 0
+  m_Name: DebrisConcrete
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &58255408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58255407}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.26284, y: -2.24907, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &58255409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58255407}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf0f107be02e0f469627dfcc6a3afd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DebrisConcrete
+  fallingPrefab: {fileID: 7110495015016375750, guid: 05fb9e00ed645bd47ad9c02c1d3c10fb, type: 3}
+  spawnYStart: 6.5
+  spawnYStep: 1
+  verticalSteps: 3
+  minX: 0.5
+  maxX: 9.5
+  objectsPerWave: 5
+  quickSpawnDelay: 0.8
 --- !u!1 &97506403
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +308,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97506403}
   m_CullTransparentMesh: 1
+--- !u!1 &339594125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 339594126}
+  m_Layer: 0
+  m_Name: Girder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &339594126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339594125}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.39836, y: -1.20937, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &357743047
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,7 +351,7 @@ GameObject:
   - component: {fileID: 357743049}
   - component: {fileID: 357743048}
   m_Layer: 8
-  m_Name: DefenderIdle_0
+  m_Name: Defender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,7 +471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &373088902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,7 +479,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373088901}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d538e261bf647f47bbf20e5dfbe9952, type: 3}
   m_Name: 
@@ -429,7 +512,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373088901}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbf0f107be02e0f469627dfcc6a3afd2, type: 3}
   m_Name: 
@@ -441,8 +524,6 @@ MonoBehaviour:
   minX: 0.5
   maxX: 9.5
   objectsPerWave: 5
-  minWaveDelay: 2
-  maxWaveDelay: 4
   quickSpawnDelay: 0.8
 --- !u!114 &373088905
 MonoBehaviour:
@@ -451,7 +532,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373088901}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbf0f107be02e0f469627dfcc6a3afd2, type: 3}
   m_Name: 
@@ -463,8 +544,6 @@ MonoBehaviour:
   minX: 0.5
   maxX: 9.5
   objectsPerWave: 2
-  minWaveDelay: 2
-  maxWaveDelay: 4
   quickSpawnDelay: 0.6
 --- !u!1 &612976444
 GameObject:
@@ -669,6 +748,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CountdownTimer
   startTime: 60
   timerText: {fileID: 1655932916}
+--- !u!1 &917311756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 917311757}
+  m_Layer: 0
+  m_Name: DebrisConcreteBig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &917311757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917311756}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.39836, y: -1.20937, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1111741511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,7 +1452,7 @@ GameObject:
   - component: {fileID: 1361627737}
   - component: {fileID: 1361627736}
   m_Layer: 5
-  m_Name: Square
+  m_Name: City
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2030,3 +2140,6 @@ SceneRoots:
   - {fileID: 774619612}
   - {fileID: 357743050}
   - {fileID: 1361627737}
+  - {fileID: 58255408}
+  - {fileID: 917311757}
+  - {fileID: 339594126}

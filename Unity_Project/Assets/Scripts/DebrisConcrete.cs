@@ -16,9 +16,6 @@ public class DebrisConcrete : MonoBehaviour
 
     public int objectsPerWave = 5;
 
-    public float minWaveDelay = 2f;
-    public float maxWaveDelay = 4f;
-
     public float quickSpawnDelay = 0.15f;
 
     private List<float> gridX = new List<float>();
@@ -27,7 +24,7 @@ public class DebrisConcrete : MonoBehaviour
     void Start()
     {
         GenerateGrid();
-        StartCoroutine(SpawnLoop());
+        SpawnWave(); // Trigger once
     }
 
     void GenerateGrid()
@@ -45,17 +42,6 @@ public class DebrisConcrete : MonoBehaviour
         for (int i = 0; i < verticalSteps; i++)
         {
             gridY.Add(spawnYStart + i * spawnYStep);
-        }
-    }
-
-    IEnumerator SpawnLoop()
-    {
-        while (true)
-        {
-            SpawnWave();
-
-            float waitTime = Random.Range(minWaveDelay, maxWaveDelay);
-            yield return new WaitForSeconds(waitTime);
         }
     }
 
