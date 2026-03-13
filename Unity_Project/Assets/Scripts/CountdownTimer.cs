@@ -1,35 +1,55 @@
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UI; // Only needed if you want to display the timer in UI
 
 public class CountdownTimer : MonoBehaviour
 {
-    public float startTime = 60f;   // Set the time in seconds in the Inspector
+    [Header("Timer Settings")]
+    public float startTime = 60f; // Set your countdown time in seconds
     private float currentTime;
 
-    public Text timerText; // Optional UI Text to display the timer
+    [Header("UI (Optional)")]
+    public Text timerText; // Assign a UI Text if you want to show the countdown
+
+    private bool timerActive = true;
 
     void Start()
     {
         currentTime = startTime;
-        Time.timeScale = 1f; // Ensure the game runs normally at start
+        UpdateTimerUI();
     }
 
     void Update()
     {
-        if (currentTime > 0)
+        // Check if any object with tag "Player" exists
+        if (GameObject.FindWithTag("Player") == null)
         {
-            currentTime -= Time.deltaTime;
-            UpdateTimerDisplay();
+            timerActive = false;
+            return; // Stop counting if no player is found
         }
         else
         {
-            currentTime = 0;
-            UpdateTimerDisplay();
-            FreezeScene();
+            timerActive = true;
+        }
+
+        if (!timerActive) return;
+
+        // Countdown
+        if (currentTime > 0)
+        {
+            currentTime -= Time.deltaTime;
+            if (currentTime < 0)
+                currentTime = 0;
+
+            UpdateTimerUI();
+        }
+        else
+        {
+            // Freeze the scene
+            Time.timeScale = 0f;
         }
     }
 
-    void UpdateTimerDisplay()
+    void UpdateTimerUI()
     {
         if (timerText != null)
         {
@@ -39,8 +59,12 @@ public class CountdownTimer : MonoBehaviour
         }
     }
 
-    void FreezeScene()
+    // Optional: Reset the timer and unfreeze the scene
+    public void ResetTimer()
     {
-        Time.timeScale = 0f; // Freezes the entire game
+        currentTime = startTime;
+        Time.timeScale = 1f;
+        timerActive = true;
+        UpdateTimerUI();
     }
 }

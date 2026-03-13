@@ -397,6 +397,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Debris
   destroyParticles: {fileID: 7091793901095659804, guid: d0e695ad4f33d814c9c1e7c6c7f8c7d3, type: 3}
+  shootPrefab: {fileID: 0}
+  shootForce: 6
 --- !u!1 &1832981003181931108
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,6 +614,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Debris
   destroyParticles: {fileID: 7091793901095659804, guid: d0e695ad4f33d814c9c1e7c6c7f8c7d3, type: 3}
+  shootPrefab: {fileID: 0}
+  shootForce: 6
 --- !u!1 &2096384084173867221
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,6 +738,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Debris
   destroyParticles: {fileID: 7091793901095659804, guid: d0e695ad4f33d814c9c1e7c6c7f8c7d3, type: 3}
+  shootPrefab: {fileID: 0}
+  shootForce: 6
 --- !u!1 &2155357951269083918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,6 +1226,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Debris
   destroyParticles: {fileID: 7091793901095659804, guid: d0e695ad4f33d814c9c1e7c6c7f8c7d3, type: 3}
+  shootPrefab: {fileID: 0}
+  shootForce: 6
 --- !u!1 &4495320782977373216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,6 +1660,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Debris
   destroyParticles: {fileID: 7091793901095659804, guid: d0e695ad4f33d814c9c1e7c6c7f8c7d3, type: 3}
+  shootPrefab: {fileID: 0}
+  shootForce: 6
 --- !u!1 &7684734315755089847
 GameObject:
   m_ObjectHideFlags: 0
