@@ -195,4 +195,3 @@ MonoBehaviour:
   destroyParticles: {fileID: 3254253784775463448, guid: 28dcf7fde92b11f47bc11325cd8ab67a, type: 3}
   shootPrefab: {fileID: 0}
   shootForce: 6
-  spawnOffset: 0.3
