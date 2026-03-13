@@ -9,7 +9,7 @@ public class DebrisConcrete : MonoBehaviour
     // Vertical spawning options
     public float spawnYStart = 6.5f;
     public float spawnYStep = 1f;
-    public int verticalSteps = 3; // number of heights to choose from
+    public int verticalSteps = 3;
 
     public float minX = 0.5f;
     public float maxX = 10.5f;
@@ -35,8 +35,8 @@ public class DebrisConcrete : MonoBehaviour
         gridX.Clear();
         gridY.Clear();
 
-        // X positions
-        for (float x = minX; x <= maxX; x += 2f) // 2-unit gap
+        // X positions every .25
+        for (float x = minX; x <= maxX; x += 0.25f)
         {
             gridX.Add(x);
         }
@@ -63,7 +63,6 @@ public class DebrisConcrete : MonoBehaviour
     {
         List<Vector2> availablePositions = new List<Vector2>();
 
-        // Make all possible (X,Y) combinations
         foreach (float x in gridX)
         {
             foreach (float y in gridY)
@@ -74,15 +73,14 @@ public class DebrisConcrete : MonoBehaviour
 
         List<Vector2> chosenPositions = new List<Vector2>();
 
-        // Randomly pick positions until we have enough
         for (int i = 0; i < objectsPerWave && availablePositions.Count > 0; i++)
         {
             int index = Random.Range(0, availablePositions.Count);
             Vector2 chosen = availablePositions[index];
             chosenPositions.Add(chosen);
 
-            // Remove any positions horizontally too close
-            availablePositions.RemoveAll(pos => Mathf.Abs(pos.x - chosen.x) < 2f);
+            // Remove positions within 1 unit horizontally
+            availablePositions.RemoveAll(pos => Mathf.Abs(pos.x - chosen.x) < 1f);
         }
 
         StartCoroutine(SpawnObjects(chosenPositions));
