@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: c46b3be9e1453914ab03c80ff2a62f9a
+guid: e0c4c53eeba23f74cba8e6e4967bc0f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2056272055162043355
-    second: DefenderPunch_0
+      213: -3981256245840619132
+    second: DefenderKick_0
   - first:
-      213: -2428151949519223130
-    second: DefenderPunch_1
+      213: 6238111676689323741
+    second: DefenderKick_1
   - first:
-      213: -5125089071507202278
-    second: DefenderPunch_2
+      213: -9159767434847887772
+    second: DefenderKick_2
   - first:
-      213: 529943514923326908
-    second: DefenderPunch_3
+      213: -2087665502733101414
+    second: DefenderKick_3
   - first:
-      213: 5203136138774303461
-    second: DefenderPunch_4
+      213: 2347608297825642327
+    second: DefenderKick_4
   - first:
-      213: 7519856271520248302
-    second: DefenderPunch_5
+      213: 4619748205203871740
+    second: DefenderKick_5
   - first:
-      213: -8855871217486224795
-    second: DefenderPunch_6
+      213: 8553861439789415038
+    second: DefenderKick_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DefenderPunch_0
+      name: DefenderKick_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 524018ed577a673e0800000000000000
-      internalID: -2056272055162043355
+      spriteID: 4895ddab98cbfb8c0800000000000000
+      internalID: -3981256245840619132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch_1
+      name: DefenderKick_1
       rect:
         serializedVersion: 2
         x: 128
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a60c34baa87d4ed0800000000000000
-      internalID: -2428151949519223130
+      spriteID: dd6984ed489329650800000000000000
+      internalID: 6238111676689323741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch_2
+      name: DefenderKick_2
       rect:
         serializedVersion: 2
         x: 256
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1f9392b4a600e8b0800000000000000
-      internalID: -5125089071507202278
+      spriteID: 46e53bc6c08f1e080800000000000000
+      internalID: -9159767434847887772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch_3
+      name: DefenderKick_3
       rect:
         serializedVersion: 2
         x: 384
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbdd60ea1dcba5700800000000000000
-      internalID: 529943514923326908
+      spriteID: a9691c3494f1703e0800000000000000
+      internalID: -2087665502733101414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch_4
+      name: DefenderKick_4
       rect:
         serializedVersion: 2
         x: 512
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e2d3a530c0453840800000000000000
-      internalID: 5203136138774303461
+      spriteID: 75728a70f41649020800000000000000
+      internalID: 2347608297825642327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch_5
+      name: DefenderKick_5
       rect:
         serializedVersion: 2
         x: 640
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee135f1ef65eb5860800000000000000
-      internalID: 7519856271520248302
+      spriteID: cf7dce22484ac1040800000000000000
+      internalID: 4619748205203871740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch_6
+      name: DefenderKick_6
       rect:
         serializedVersion: 2
         x: 768
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,8 +265,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 562a0215c00a91580800000000000000
-      internalID: -8855871217486224795
+      spriteID: e7a3f80c8ab65b670800000000000000
+      internalID: 8553861439789415038
       vertices: []
       indices: 
       edges: []
@@ -275,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 07dfe14df337e4e42b98bddb54e8b2a6
+    spriteID: bf3f1ebceffada04eae603592fa1e7cb
     internalID: 0
     vertices: []
     indices: 
@@ -285,15 +285,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":112.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      DefenderPunch_0: -2056272055162043355
-      DefenderPunch_1: -2428151949519223130
-      DefenderPunch_2: -5125089071507202278
-      DefenderPunch_3: 529943514923326908
-      DefenderPunch_4: 5203136138774303461
-      DefenderPunch_5: 7519856271520248302
-      DefenderPunch_6: -8855871217486224795
+      DefenderKick_0: -3981256245840619132
+      DefenderKick_1: 6238111676689323741
+      DefenderKick_2: -9159767434847887772
+      DefenderKick_3: -2087665502733101414
+      DefenderKick_4: 2347608297825642327
+      DefenderKick_5: 4619748205203871740
+      DefenderKick_6: 8553861439789415038
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

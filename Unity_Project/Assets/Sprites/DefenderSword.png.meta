@@ -1,28 +1,40 @@
 fileFormatVersion: 2
-guid: c46b3be9e1453914ab03c80ff2a62f9a
+guid: bab2630efb820584a8b4ea352aa0cb40
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2056272055162043355
-    second: DefenderPunch_0
+      213: -7590000181788962751
+    second: DefenderSword_0
   - first:
-      213: -2428151949519223130
-    second: DefenderPunch_1
+      213: -5244727318976042932
+    second: DefenderSword_1
   - first:
-      213: -5125089071507202278
-    second: DefenderPunch_2
+      213: 1390713341324497718
+    second: DefenderSword_2
   - first:
-      213: 529943514923326908
-    second: DefenderPunch_3
+      213: 3909049334498537202
+    second: DefenderSword_3
   - first:
-      213: 5203136138774303461
-    second: DefenderPunch_4
+      213: 6702598400219369865
+    second: DefenderSword_4
   - first:
-      213: 7519856271520248302
-    second: DefenderPunch_5
+      213: 5378119919159560183
+    second: DefenderSword_5
   - first:
-      213: -8855871217486224795
-    second: DefenderPunch_6
+      213: 4005599584373062776
+    second: DefenderSword_6
+  - first:
+      213: -2484344818363663470
+    second: DefenderSword_7
+  - first:
+      213: 8366629624075945711
+    second: DefenderSword_8
+  - first:
+      213: 5152929862246972980
+    second: DefenderSword_9
+  - first:
+      213: -2693029461258230713
+    second: DefenderSword_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,13 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DefenderPunch_0
+      name: DefenderSword_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 524018ed577a673e0800000000000000
-      internalID: -2056272055162043355
+      spriteID: 14091575c07eaa690800000000000000
+      internalID: -7590000181788962751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch_1
+      name: DefenderSword_1
       rect:
         serializedVersion: 2
         x: 128
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a60c34baa87d4ed0800000000000000
-      internalID: -2428151949519223130
+      spriteID: c4865a88a4cf637b0800000000000000
+      internalID: -5244727318976042932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch_2
+      name: DefenderSword_2
       rect:
         serializedVersion: 2
         x: 256
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +189,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1f9392b4a600e8b0800000000000000
-      internalID: -5125089071507202278
+      spriteID: 6331b066a6ecc4310800000000000000
+      internalID: 1390713341324497718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch_3
+      name: DefenderSword_3
       rect:
         serializedVersion: 2
         x: 384
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cbdd60ea1dcba5700800000000000000
-      internalID: 529943514923326908
+      spriteID: 2fe2340a8abbf3630800000000000000
+      internalID: 3909049334498537202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch_4
+      name: DefenderSword_4
       rect:
         serializedVersion: 2
         x: 512
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +233,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e2d3a530c0453840800000000000000
-      internalID: 5203136138774303461
+      spriteID: 9815d2dabb9640d50800000000000000
+      internalID: 6702598400219369865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch_5
+      name: DefenderSword_5
       rect:
         serializedVersion: 2
         x: 640
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee135f1ef65eb5860800000000000000
-      internalID: 7519856271520248302
+      spriteID: 7f745fc629be2aa40800000000000000
+      internalID: 5378119919159560183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch_6
+      name: DefenderSword_6
       rect:
         serializedVersion: 2
         x: 768
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,8 +277,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 562a0215c00a91580800000000000000
-      internalID: -8855871217486224795
+      spriteID: 87c3203799fb69730800000000000000
+      internalID: 4005599584373062776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DefenderSword_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29bf9d1ec85d58dd0800000000000000
+      internalID: -2484344818363663470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DefenderSword_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe68e46905d3c1470800000000000000
+      internalID: 8366629624075945711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DefenderSword_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ebbb78862e28740800000000000000
+      internalID: 5152929862246972980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DefenderSword_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 744aa0829ff60aad0800000000000000
+      internalID: -2693029461258230713
       vertices: []
       indices: 
       edges: []
@@ -275,7 +375,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 07dfe14df337e4e42b98bddb54e8b2a6
+    spriteID: 23fd11e316f73d34489a062fa5810bd4
     internalID: 0
     vertices: []
     indices: 
@@ -285,15 +385,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":112.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      DefenderPunch_0: -2056272055162043355
-      DefenderPunch_1: -2428151949519223130
-      DefenderPunch_2: -5125089071507202278
-      DefenderPunch_3: 529943514923326908
-      DefenderPunch_4: 5203136138774303461
-      DefenderPunch_5: 7519856271520248302
-      DefenderPunch_6: -8855871217486224795
+      DefenderSword_0: -7590000181788962751
+      DefenderSword_1: -5244727318976042932
+      DefenderSword_10: -2693029461258230713
+      DefenderSword_2: 1390713341324497718
+      DefenderSword_3: 3909049334498537202
+      DefenderSword_4: 6702598400219369865
+      DefenderSword_5: 5378119919159560183
+      DefenderSword_6: 4005599584373062776
+      DefenderSword_7: -2484344818363663470
+      DefenderSword_8: 8366629624075945711
+      DefenderSword_9: 5152929862246972980
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

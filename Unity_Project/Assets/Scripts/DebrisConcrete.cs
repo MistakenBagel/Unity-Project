@@ -21,32 +21,26 @@ public class DebrisConcrete : MonoBehaviour
     private List<float> gridX = new List<float>();
     private List<float> gridY = new List<float>();
 
-    void Start()
-    {
-        GenerateGrid();
-        SpawnWave(); // Trigger once
-    }
-
     void GenerateGrid()
     {
         gridX.Clear();
         gridY.Clear();
 
-        // X positions every .25
         for (float x = minX; x <= maxX; x += 0.25f)
         {
             gridX.Add(x);
         }
 
-        // Y positions
         for (int i = 0; i < verticalSteps; i++)
         {
             gridY.Add(spawnYStart + i * spawnYStep);
         }
     }
 
-    void SpawnWave()
+    public void SpawnWave()   // THIS is what the fight controller will call
     {
+        GenerateGrid();
+
         List<Vector2> availablePositions = new List<Vector2>();
 
         foreach (float x in gridX)
@@ -65,7 +59,6 @@ public class DebrisConcrete : MonoBehaviour
             Vector2 chosen = availablePositions[index];
             chosenPositions.Add(chosen);
 
-            // Remove positions within 1 unit horizontally
             availablePositions.RemoveAll(pos => Mathf.Abs(pos.x - chosen.x) < 1f);
         }
 
