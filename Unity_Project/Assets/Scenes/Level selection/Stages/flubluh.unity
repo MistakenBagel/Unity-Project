@@ -600,16 +600,20 @@ MonoBehaviour:
   defenderAttacks:
   - animationTrigger: DefenderPunch
     attackPattern: {fileID: 58255409}
+    spawnDelay: 0.5
     attackDuration: 0
   - animationTrigger: DefenderKick
     attackPattern: {fileID: 917311758}
+    spawnDelay: 0.5
     attackDuration: 0
   - animationTrigger: DefenderSword
     attackPattern: {fileID: 339594127}
+    spawnDelay: 0.8
     attackDuration: 0
   gooBeastAttacks:
   - animationTrigger: 
     attackPattern: {fileID: 0}
+    spawnDelay: 0.4
     attackDuration: 0
   timeBetweenAttacks: 2
 --- !u!4 &421705752
@@ -1848,6 +1852,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1368809391}
   m_CullTransparentMesh: 1
+--- !u!1 &1436417365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1436417367}
+  - component: {fileID: 1436417366}
+  m_Layer: 0
+  m_Name: GooGlob
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1436417366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436417365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf0f107be02e0f469627dfcc6a3afd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DebrisConcrete
+  fallingPrefab: {fileID: 5176557304777157717, guid: 9353399d0d4c4ed4dbbdaa169265ea8b, type: 3}
+  spawnYStart: 6.5
+  spawnYStep: 1
+  verticalSteps: 3
+  minX: 0.5
+  maxX: 9.5
+  objectsPerWave: 3
+  quickSpawnDelay: 0.4
+--- !u!4 &1436417367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436417365}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.11774, y: -1.41844, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1655932914
 GameObject:
   m_ObjectHideFlags: 0
@@ -2483,6 +2539,7 @@ SceneRoots:
   - {fileID: 58255408}
   - {fileID: 917311757}
   - {fileID: 339594126}
+  - {fileID: 1436417367}
   - {fileID: 2124572814}
   - {fileID: 1323651784}
   - {fileID: 373088903}
