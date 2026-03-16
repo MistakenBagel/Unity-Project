@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: ea88647acdaf91e41a628e74862eb1c4
+guid: e0c4c53eeba23f74cba8e6e4967bc0f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1311531596716800392
-    second: DefenderPunch 1_0
+      213: -3981256245840619132
+    second: DefenderKick_0
   - first:
-      213: -3808065586397722937
-    second: DefenderPunch 1_1
+      213: 6238111676689323741
+    second: DefenderKick_1
   - first:
-      213: 8693318917497274451
-    second: DefenderPunch 1_2
+      213: -9159767434847887772
+    second: DefenderKick_2
   - first:
-      213: 2397151305622187523
-    second: DefenderPunch 1_3
+      213: -2087665502733101414
+    second: DefenderKick_3
   - first:
-      213: -7095060715185107598
-    second: DefenderPunch 1_4
+      213: 2347608297825642327
+    second: DefenderKick_4
   - first:
-      213: -1893348195896263254
-    second: DefenderPunch 1_5
+      213: 4619748205203871740
+    second: DefenderKick_5
   - first:
-      213: 8039512881811757182
-    second: DefenderPunch 1_6
+      213: 8553861439789415038
+    second: DefenderKick_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,7 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DefenderPunch 1_0
+      name: DefenderKick_0
       rect:
         serializedVersion: 2
         x: 0
@@ -133,14 +133,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8768ef926f08ccde0800000000000000
-      internalID: -1311531596716800392
+      spriteID: 4895ddab98cbfb8c0800000000000000
+      internalID: -3981256245840619132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_1
+      name: DefenderKick_1
       rect:
         serializedVersion: 2
         x: 128
@@ -155,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7c6cf517688072bc0800000000000000
-      internalID: -3808065586397722937
+      spriteID: dd6984ed489329650800000000000000
+      internalID: 6238111676689323741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_2
+      name: DefenderKick_2
       rect:
         serializedVersion: 2
         x: 256
@@ -177,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 350cb9c0f7fd4a870800000000000000
-      internalID: 8693318917497274451
+      spriteID: 46e53bc6c08f1e080800000000000000
+      internalID: -9159767434847887772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_3
+      name: DefenderKick_3
       rect:
         serializedVersion: 2
         x: 384
@@ -199,14 +199,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30e697c6964644120800000000000000
-      internalID: 2397151305622187523
+      spriteID: a9691c3494f1703e0800000000000000
+      internalID: -2087665502733101414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_4
+      name: DefenderKick_4
       rect:
         serializedVersion: 2
         x: 512
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27d009beed7498d90800000000000000
-      internalID: -7095060715185107598
+      spriteID: 75728a70f41649020800000000000000
+      internalID: 2347608297825642327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_5
+      name: DefenderKick_5
       rect:
         serializedVersion: 2
         x: 640
@@ -243,14 +243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aadf973e8d979b5e0800000000000000
-      internalID: -1893348195896263254
+      spriteID: cf7dce22484ac1040800000000000000
+      internalID: 4619748205203871740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_6
+      name: DefenderKick_6
       rect:
         serializedVersion: 2
         x: 768
@@ -265,8 +265,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e78119fee56129f60800000000000000
-      internalID: 8039512881811757182
+      spriteID: e7a3f80c8ab65b670800000000000000
+      internalID: 8553861439789415038
       vertices: []
       indices: 
       edges: []
@@ -275,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0fc41a20897c7154191b15158808689a
+    spriteID: bf3f1ebceffada04eae603592fa1e7cb
     internalID: 0
     vertices: []
     indices: 
@@ -287,13 +287,13 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      DefenderPunch 1_0: -1311531596716800392
-      DefenderPunch 1_1: -3808065586397722937
-      DefenderPunch 1_2: 8693318917497274451
-      DefenderPunch 1_3: 2397151305622187523
-      DefenderPunch 1_4: -7095060715185107598
-      DefenderPunch 1_5: -1893348195896263254
-      DefenderPunch 1_6: 8039512881811757182
+      DefenderKick_0: -3981256245840619132
+      DefenderKick_1: 6238111676689323741
+      DefenderKick_2: -9159767434847887772
+      DefenderKick_3: -2087665502733101414
+      DefenderKick_4: 2347608297825642327
+      DefenderKick_5: 4619748205203871740
+      DefenderKick_6: 8553861439789415038
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

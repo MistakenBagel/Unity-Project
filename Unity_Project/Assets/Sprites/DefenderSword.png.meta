@@ -1,28 +1,40 @@
 fileFormatVersion: 2
-guid: ea88647acdaf91e41a628e74862eb1c4
+guid: bab2630efb820584a8b4ea352aa0cb40
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1311531596716800392
-    second: DefenderPunch 1_0
+      213: -7590000181788962751
+    second: DefenderSword_0
   - first:
-      213: -3808065586397722937
-    second: DefenderPunch 1_1
+      213: -5244727318976042932
+    second: DefenderSword_1
   - first:
-      213: 8693318917497274451
-    second: DefenderPunch 1_2
+      213: 1390713341324497718
+    second: DefenderSword_2
   - first:
-      213: 2397151305622187523
-    second: DefenderPunch 1_3
+      213: 3909049334498537202
+    second: DefenderSword_3
   - first:
-      213: -7095060715185107598
-    second: DefenderPunch 1_4
+      213: 6702598400219369865
+    second: DefenderSword_4
   - first:
-      213: -1893348195896263254
-    second: DefenderPunch 1_5
+      213: 5378119919159560183
+    second: DefenderSword_5
   - first:
-      213: 8039512881811757182
-    second: DefenderPunch 1_6
+      213: 4005599584373062776
+    second: DefenderSword_6
+  - first:
+      213: -2484344818363663470
+    second: DefenderSword_7
+  - first:
+      213: 8366629624075945711
+    second: DefenderSword_8
+  - first:
+      213: 5152929862246972980
+    second: DefenderSword_9
+  - first:
+      213: -2693029461258230713
+    second: DefenderSword_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,7 +130,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DefenderPunch 1_0
+      name: DefenderSword_0
       rect:
         serializedVersion: 2
         x: 0
@@ -133,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8768ef926f08ccde0800000000000000
-      internalID: -1311531596716800392
+      spriteID: 14091575c07eaa690800000000000000
+      internalID: -7590000181788962751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_1
+      name: DefenderSword_1
       rect:
         serializedVersion: 2
         x: 128
@@ -155,14 +167,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7c6cf517688072bc0800000000000000
-      internalID: -3808065586397722937
+      spriteID: c4865a88a4cf637b0800000000000000
+      internalID: -5244727318976042932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_2
+      name: DefenderSword_2
       rect:
         serializedVersion: 2
         x: 256
@@ -177,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 350cb9c0f7fd4a870800000000000000
-      internalID: 8693318917497274451
+      spriteID: 6331b066a6ecc4310800000000000000
+      internalID: 1390713341324497718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_3
+      name: DefenderSword_3
       rect:
         serializedVersion: 2
         x: 384
@@ -199,14 +211,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30e697c6964644120800000000000000
-      internalID: 2397151305622187523
+      spriteID: 2fe2340a8abbf3630800000000000000
+      internalID: 3909049334498537202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_4
+      name: DefenderSword_4
       rect:
         serializedVersion: 2
         x: 512
@@ -221,14 +233,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27d009beed7498d90800000000000000
-      internalID: -7095060715185107598
+      spriteID: 9815d2dabb9640d50800000000000000
+      internalID: 6702598400219369865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_5
+      name: DefenderSword_5
       rect:
         serializedVersion: 2
         x: 640
@@ -243,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aadf973e8d979b5e0800000000000000
-      internalID: -1893348195896263254
+      spriteID: 7f745fc629be2aa40800000000000000
+      internalID: 5378119919159560183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_6
+      name: DefenderSword_6
       rect:
         serializedVersion: 2
         x: 768
@@ -265,8 +277,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e78119fee56129f60800000000000000
-      internalID: 8039512881811757182
+      spriteID: 87c3203799fb69730800000000000000
+      internalID: 4005599584373062776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DefenderSword_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29bf9d1ec85d58dd0800000000000000
+      internalID: -2484344818363663470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DefenderSword_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe68e46905d3c1470800000000000000
+      internalID: 8366629624075945711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DefenderSword_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ebbb78862e28740800000000000000
+      internalID: 5152929862246972980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DefenderSword_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 744aa0829ff60aad0800000000000000
+      internalID: -2693029461258230713
       vertices: []
       indices: 
       edges: []
@@ -275,7 +375,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0fc41a20897c7154191b15158808689a
+    spriteID: 23fd11e316f73d34489a062fa5810bd4
     internalID: 0
     vertices: []
     indices: 
@@ -287,13 +387,17 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      DefenderPunch 1_0: -1311531596716800392
-      DefenderPunch 1_1: -3808065586397722937
-      DefenderPunch 1_2: 8693318917497274451
-      DefenderPunch 1_3: 2397151305622187523
-      DefenderPunch 1_4: -7095060715185107598
-      DefenderPunch 1_5: -1893348195896263254
-      DefenderPunch 1_6: 8039512881811757182
+      DefenderSword_0: -7590000181788962751
+      DefenderSword_1: -5244727318976042932
+      DefenderSword_10: -2693029461258230713
+      DefenderSword_2: 1390713341324497718
+      DefenderSword_3: 3909049334498537202
+      DefenderSword_4: 6702598400219369865
+      DefenderSword_5: 5378119919159560183
+      DefenderSword_6: 4005599584373062776
+      DefenderSword_7: -2484344818363663470
+      DefenderSword_8: 8366629624075945711
+      DefenderSword_9: 5152929862246972980
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

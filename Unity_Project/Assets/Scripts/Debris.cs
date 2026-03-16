@@ -9,6 +9,11 @@ public class Debris : MonoBehaviour
 
     public float shootForce = 6f;
 
+    [Header("Optional Ground Lifetime")]
+    public float stayOnGroundTime = 0f; // 0 = destroy immediately like normal debris
+
+    private bool hasLanded = false;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -48,11 +53,23 @@ public class Debris : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        if (hasLanded) return;
+
         if (collision.gameObject.CompareTag("Ground"))
         {
+            hasLanded = true;
+
             SpawnParticles();
             ShootObjects();
-            Destroy(gameObject);
+
+            if (stayOnGroundTime <= 0f)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                Destroy(gameObject, stayOnGroundTime);
+            }
         }
     }
 

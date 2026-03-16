@@ -1,28 +1,25 @@
 fileFormatVersion: 2
-guid: ea88647acdaf91e41a628e74862eb1c4
+guid: 96df0a9743d184e4ca5cab9f7b3db0dc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1311531596716800392
-    second: DefenderPunch 1_0
+      213: -7420177886175438278
+    second: GooBeastIdle_0
   - first:
-      213: -3808065586397722937
-    second: DefenderPunch 1_1
+      213: 6729136834307019742
+    second: GooBeastIdle_1
   - first:
-      213: 8693318917497274451
-    second: DefenderPunch 1_2
+      213: 8081557360655644940
+    second: GooBeastIdle_2
   - first:
-      213: 2397151305622187523
-    second: DefenderPunch 1_3
+      213: 6877898182297556410
+    second: GooBeastIdle_3
   - first:
-      213: -7095060715185107598
-    second: DefenderPunch 1_4
+      213: -3170189592157016905
+    second: GooBeastIdle_4
   - first:
-      213: -1893348195896263254
-    second: DefenderPunch 1_5
-  - first:
-      213: 8039512881811757182
-    second: DefenderPunch 1_6
+      213: -2287990584306836746
+    second: GooBeastIdle_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DefenderPunch 1_0
+      name: GooBeastIdle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 160
+        height: 180
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8768ef926f08ccde0800000000000000
-      internalID: -1311531596716800392
+      spriteID: a3add4cb68b360990800000000000000
+      internalID: -7420177886175438278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_1
+      name: GooBeastIdle_1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 160
         y: 0
-        width: 128
-        height: 128
+        width: 160
+        height: 180
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7c6cf517688072bc0800000000000000
-      internalID: -3808065586397722937
+      spriteID: ed3dddd5c42b26d50800000000000000
+      internalID: 6729136834307019742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_2
+      name: GooBeastIdle_2
       rect:
         serializedVersion: 2
-        x: 256
+        x: 320
         y: 0
-        width: 128
-        height: 128
+        width: 160
+        height: 180
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 350cb9c0f7fd4a870800000000000000
-      internalID: 8693318917497274451
+      spriteID: c09b2d10a95772070800000000000000
+      internalID: 8081557360655644940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_3
+      name: GooBeastIdle_3
       rect:
         serializedVersion: 2
-        x: 384
+        x: 480
         y: 0
-        width: 128
-        height: 128
+        width: 160
+        height: 180
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,42 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30e697c6964644120800000000000000
-      internalID: 2397151305622187523
+      spriteID: ab59625c4f3337f50800000000000000
+      internalID: 6877898182297556410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_4
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 27d009beed7498d90800000000000000
-      internalID: -7095060715185107598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DefenderPunch 1_5
+      name: GooBeastIdle_4
       rect:
         serializedVersion: 2
         x: 640
         y: 0
-        width: 128
-        height: 128
+        width: 160
+        height: 180
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aadf973e8d979b5e0800000000000000
-      internalID: -1893348195896263254
+      spriteID: 7bc27d0cc593104d0800000000000000
+      internalID: -3170189592157016905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderPunch 1_6
+      name: GooBeastIdle_5
       rect:
         serializedVersion: 2
-        x: 768
+        x: 800
         y: 0
-        width: 128
-        height: 128
+        width: 160
+        height: 180
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e78119fee56129f60800000000000000
-      internalID: 8039512881811757182
+      spriteID: 6fad3f49fac6f30e0800000000000000
+      internalID: -2287990584306836746
       vertices: []
       indices: 
       edges: []
@@ -275,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0fc41a20897c7154191b15158808689a
+    spriteID: 9e098a3aa1e25c14da5db6f3e831e2ce
     internalID: 0
     vertices: []
     indices: 
@@ -285,15 +260,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":160.0,"y":180.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      DefenderPunch 1_0: -1311531596716800392
-      DefenderPunch 1_1: -3808065586397722937
-      DefenderPunch 1_2: 8693318917497274451
-      DefenderPunch 1_3: 2397151305622187523
-      DefenderPunch 1_4: -7095060715185107598
-      DefenderPunch 1_5: -1893348195896263254
-      DefenderPunch 1_6: 8039512881811757182
+      GooBeastIdle_0: -7420177886175438278
+      GooBeastIdle_1: 6729136834307019742
+      GooBeastIdle_2: 8081557360655644940
+      GooBeastIdle_3: 6877898182297556410
+      GooBeastIdle_4: -3170189592157016905
+      GooBeastIdle_5: -2287990584306836746
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

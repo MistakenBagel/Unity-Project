@@ -16,51 +16,31 @@ public class DebrisConcrete : MonoBehaviour
 
     public int objectsPerWave = 5;
 
-    public float minWaveDelay = 2f;
-    public float maxWaveDelay = 4f;
-
     public float quickSpawnDelay = 0.15f;
 
     private List<float> gridX = new List<float>();
     private List<float> gridY = new List<float>();
-
-    void Start()
-    {
-        GenerateGrid();
-        StartCoroutine(SpawnLoop());
-    }
 
     void GenerateGrid()
     {
         gridX.Clear();
         gridY.Clear();
 
-        // X positions every .25
         for (float x = minX; x <= maxX; x += 0.25f)
         {
             gridX.Add(x);
         }
 
-        // Y positions
         for (int i = 0; i < verticalSteps; i++)
         {
             gridY.Add(spawnYStart + i * spawnYStep);
         }
     }
 
-    IEnumerator SpawnLoop()
+    public void SpawnWave()   // THIS is what the fight controller will call
     {
-        while (true)
-        {
-            SpawnWave();
+        GenerateGrid();
 
-            float waitTime = Random.Range(minWaveDelay, maxWaveDelay);
-            yield return new WaitForSeconds(waitTime);
-        }
-    }
-
-    void SpawnWave()
-    {
         List<Vector2> availablePositions = new List<Vector2>();
 
         foreach (float x in gridX)
@@ -79,7 +59,6 @@ public class DebrisConcrete : MonoBehaviour
             Vector2 chosen = availablePositions[index];
             chosenPositions.Add(chosen);
 
-            // Remove positions within 1 unit horizontally
             availablePositions.RemoveAll(pos => Mathf.Abs(pos.x - chosen.x) < 1f);
         }
 
