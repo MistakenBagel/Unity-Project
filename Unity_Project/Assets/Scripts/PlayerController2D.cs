@@ -10,6 +10,8 @@ public class PlayerController2D : MonoBehaviour
 
     public float jumpCutMultiplier = 0.5f;
 
+    public bool canJump = true; // Allows external scripts (like GooPuddle) to disable jumping
+
     private Rigidbody2D rb;
     private Animator animator;
 
@@ -67,7 +69,7 @@ public class PlayerController2D : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isCrouching)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isCrouching && canJump)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isGrounded = false;

@@ -599,7 +599,7 @@ MonoBehaviour:
   gooBeastAnimator: {fileID: 2006290718}
   defenderAttacks:
   - animationTrigger: DefenderPunch
-    attackPattern: {fileID: 58255409}
+    attackPattern: {fileID: 1436417366}
     spawnDelay: 0.8
     attackDuration: 0
   - animationTrigger: DefenderKick
@@ -2653,6 +2653,7 @@ MonoBehaviour:
   standingCollider: {fileID: 1683399474}
   crouchCollider: {fileID: 1159463976}
   jumpCutMultiplier: 0.5
+  canJump: 1
 --- !u!61 &1683399474
 BoxCollider2D:
   m_ObjectHideFlags: 0
