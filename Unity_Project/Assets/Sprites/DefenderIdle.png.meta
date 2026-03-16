@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 915944712c41a3044a4d743b8cdb03c9
+guid: e59c419a58a079d4d8f56b5813708d0d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6361347664118939546
-    second: DefenderIdle_0
+      213: 4300702326693534769
+    second: DefenderIdle 1_0
   - first:
-      213: -1606905895791476205
-    second: DefenderIdle_1
+      213: -401438990185854848
+    second: DefenderIdle 1_1
   - first:
-      213: 4894929193767602618
-    second: DefenderIdle_2
+      213: -8534241078607583214
+    second: DefenderIdle 1_2
   - first:
-      213: -8528798186023873238
-    second: DefenderIdle_3
+      213: -1598587677264467044
+    second: DefenderIdle 1_3
   - first:
-      213: 8232112748576257753
-    second: DefenderIdle_4
+      213: 8228995768429902252
+    second: DefenderIdle 1_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DefenderIdle_0
+      name: DefenderIdle 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6600e6bd004f7b7a0800000000000000
-      internalID: -6361347664118939546
+      spriteID: 13c9343eaf92fab30800000000000000
+      internalID: 4300702326693534769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderIdle_1
+      name: DefenderIdle 1_1
       rect:
         serializedVersion: 2
         x: 128
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3124eddf99f13b9e0800000000000000
-      internalID: -1606905895791476205
+      spriteID: 0880bf68d5dcd6af0800000000000000
+      internalID: -401438990185854848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderIdle_2
+      name: DefenderIdle 1_2
       rect:
         serializedVersion: 2
         x: 256
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab90533da284ee340800000000000000
-      internalID: 4894929193767602618
+      spriteID: 2186c0294f8409980800000000000000
+      internalID: -8534241078607583214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderIdle_3
+      name: DefenderIdle 1_3
       rect:
         serializedVersion: 2
         x: 384
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a251d01cc3f93a980800000000000000
-      internalID: -8528798186023873238
+      spriteID: c9ba55a2afca0d9e0800000000000000
+      internalID: -1598587677264467044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefenderIdle_4
+      name: DefenderIdle 1_4
       rect:
         serializedVersion: 2
         x: 512
-        y: 16
+        y: 0
         width: 128
-        height: 112
+        height: 128
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d63ad1ede65e3270800000000000000
-      internalID: 8232112748576257753
+      spriteID: ca9f4736d04433270800000000000000
+      internalID: 8228995768429902252
       vertices: []
       indices: 
       edges: []
@@ -225,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0c74cdde538cbc1469b23fec4d6769f3
+    spriteID: e7ffe36998855b2479c5d8b1d40433f3
     internalID: 0
     vertices: []
     indices: 
@@ -235,13 +235,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":112.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      DefenderIdle_0: -6361347664118939546
-      DefenderIdle_1: -1606905895791476205
-      DefenderIdle_2: 4894929193767602618
-      DefenderIdle_3: -8528798186023873238
-      DefenderIdle_4: 8232112748576257753
+      DefenderIdle 1_0: 4300702326693534769
+      DefenderIdle 1_1: -401438990185854848
+      DefenderIdle 1_2: -8534241078607583214
+      DefenderIdle 1_3: -1598587677264467044
+      DefenderIdle 1_4: 8228995768429902252
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

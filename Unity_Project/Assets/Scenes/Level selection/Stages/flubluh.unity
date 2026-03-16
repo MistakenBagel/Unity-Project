@@ -446,9 +446,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 7
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6361347664118939546, guid: 915944712c41a3044a4d743b8cdb03c9, type: 3}
+  m_Sprite: {fileID: 4300702326693534769, guid: e59c419a58a079d4d8f56b5813708d0d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -467,7 +467,7 @@ Transform:
   m_GameObject: {fileID: 357743047}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.84865, y: 0.07, z: 0}
+  m_LocalPosition: {x: -11.84865, y: 0.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -600,15 +600,15 @@ MonoBehaviour:
   defenderAttacks:
   - animationTrigger: DefenderPunch
     attackPattern: {fileID: 58255409}
-    spawnDelay: 0.5
+    spawnDelay: 0.8
     attackDuration: 0
   - animationTrigger: DefenderKick
     attackPattern: {fileID: 917311758}
-    spawnDelay: 0.5
+    spawnDelay: 0.8
     attackDuration: 0
   - animationTrigger: DefenderSword
     attackPattern: {fileID: 339594127}
-    spawnDelay: 0.8
+    spawnDelay: 1.2
     attackDuration: 0
   gooBeastAttacks:
   - animationTrigger: 
