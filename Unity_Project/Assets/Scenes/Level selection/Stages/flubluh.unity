@@ -582,7 +582,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &421705751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -596,10 +596,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FightController
   defenderAnimator: {fileID: 357743048}
-  gooBeastAnimator: {fileID: 2006290718}
+  monsterAnimator: {fileID: 0}
   defenderAttacks:
   - animationTrigger: DefenderPunch
-    attackPattern: {fileID: 1436417366}
+    attackPattern: {fileID: 58255409}
     spawnDelay: 0.8
     attackDuration: 0
   - animationTrigger: DefenderKick

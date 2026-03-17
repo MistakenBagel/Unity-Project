@@ -7,6 +7,9 @@ public class Debris : MonoBehaviour
     public GameObject destroyParticles;
     public GameObject shootPrefab;
 
+    [Header("Optional Replacement")]
+    public GameObject replaceOnGroundPrefab; // NEW: prefab to spawn on impact
+
     public float shootForce = 6f;
 
     [Header("Optional Ground Lifetime")]
@@ -61,6 +64,7 @@ public class Debris : MonoBehaviour
 
             SpawnParticles();
             ShootObjects();
+            ReplaceObject(); // NEW
 
             if (stayOnGroundTime <= 0f)
             {
@@ -105,5 +109,17 @@ public class Debris : MonoBehaviour
 
         if (rightRB != null)
             rightRB.AddForce(rightDir * shootForce, ForceMode2D.Impulse);
+    }
+
+    void ReplaceObject()
+    {
+        // Only do something if a prefab is assigned
+        if (replaceOnGroundPrefab == null) return;
+
+        Instantiate(
+            replaceOnGroundPrefab,
+            transform.position,
+            Quaternion.identity
+        );
     }
 }

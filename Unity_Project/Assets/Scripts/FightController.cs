@@ -15,7 +15,7 @@ public class FightController : MonoBehaviour
 
     [Header("Animators")]
     public Animator defenderAnimator;
-    public Animator gooBeastAnimator;
+    public Animator monsterAnimator;
 
     [Header("Defender Attacks")]
     public Attack[] defenderAttacks;
@@ -43,7 +43,7 @@ public class FightController : MonoBehaviour
             if (defenderTurn)
                 yield return StartCoroutine(DoAttack(defenderAnimator, defenderAttacks));
             else
-                yield return StartCoroutine(DoAttack(gooBeastAnimator, gooBeastAttacks));
+                yield return StartCoroutine(DoAttack(monsterAnimator, gooBeastAttacks));
 
             defenderTurn = !defenderTurn;
 
