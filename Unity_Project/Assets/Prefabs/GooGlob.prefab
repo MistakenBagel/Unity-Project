@@ -105,7 +105,7 @@ Animator:
   m_GameObject: {fileID: 3705032623669843315}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 46ebaa51f07ba9c45a80c4150d9893e5, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -192,8 +192,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc5efe851c564542adab8468b499476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Debris
-  destroyParticles: {fileID: 3254253784775463448, guid: 28dcf7fde92b11f47bc11325cd8ab67a, type: 3}
+  destroyParticles: {fileID: 0}
   shootPrefab: {fileID: 0}
-  replaceOnGroundPrefab: {fileID: 0}
+  replaceOnGroundPrefab: {fileID: 5231550633077903580, guid: 4cf8ad79c2721d947afe3675cacabd22, type: 3}
   shootForce: 6
   stayOnGroundTime: 0
+  minX: -2
+  maxX: 11

@@ -133,12 +133,12 @@ TextureImporter:
       name: GooBeastGlobspit_0
       rect:
         serializedVersion: 2
-        x: 49
-        y: 1
-        width: 98
-        height: 98
+        x: 0
+        y: 0
+        width: 160
+        height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: GooBeastGlobspit_1
       rect:
         serializedVersion: 2
-        x: 208
-        y: 1
-        width: 99
-        height: 98
+        x: 160
+        y: 0
+        width: 160
+        height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -177,12 +177,12 @@ TextureImporter:
       name: GooBeastGlobspit_2
       rect:
         serializedVersion: 2
-        x: 368
-        y: 1
-        width: 99
-        height: 97
+        x: 320
+        y: 0
+        width: 160
+        height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -199,12 +199,12 @@ TextureImporter:
       name: GooBeastGlobspit_3
       rect:
         serializedVersion: 2
-        x: 525
-        y: 1
-        width: 102
-        height: 95
+        x: 480
+        y: 0
+        width: 160
+        height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -221,12 +221,12 @@ TextureImporter:
       name: GooBeastGlobspit_4
       rect:
         serializedVersion: 2
-        x: 654
-        y: 1
-        width: 133
-        height: 90
+        x: 640
+        y: 0
+        width: 160
+        height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -243,12 +243,12 @@ TextureImporter:
       name: GooBeastGlobspit_5
       rect:
         serializedVersion: 2
-        x: 803
-        y: 35
-        width: 10
-        height: 15
+        x: 800
+        y: 0
+        width: 160
+        height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -265,12 +265,12 @@ TextureImporter:
       name: GooBeastGlobspit_6
       rect:
         serializedVersion: 2
-        x: 836
-        y: 1
-        width: 111
-        height: 90
+        x: 960
+        y: 0
+        width: 160
+        height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -287,12 +287,12 @@ TextureImporter:
       name: GooBeastGlobspit_7
       rect:
         serializedVersion: 2
-        x: 963
-        y: 31
-        width: 20
-        height: 22
+        x: 1120
+        y: 0
+        width: 160
+        height: 180
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -305,77 +305,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: GooBeastGlobspit_8
-      rect:
-        serializedVersion: 2
-        x: 997
-        y: 1
-        width: 110
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a67c3fa21522f5d50800000000000000
-      internalID: 6728134100323125098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GooBeastGlobspit_9
-      rect:
-        serializedVersion: 2
-        x: 1123
-        y: 26
-        width: 24
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0f3109dab44406e40800000000000000
-      internalID: 5647589024547738608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GooBeastGlobspit_10
-      rect:
-        serializedVersion: 2
-        x: 1169
-        y: 1
-        width: 98
-        height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c94c883594f5bf3c0800000000000000
-      internalID: -4324758248620505956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c5dc80691b860b543b99b34d615e7c39
     internalID: 0
     vertices: []
     indices: 
@@ -383,19 +317,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":160.0,"y":180.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       GooBeastGlobspit_0: -3727758626039999448
       GooBeastGlobspit_1: -5421050213544150311
-      GooBeastGlobspit_10: -4324758248620505956
       GooBeastGlobspit_2: -151469577775020285
       GooBeastGlobspit_3: -1622738477951131811
       GooBeastGlobspit_4: -486149329372392846
       GooBeastGlobspit_5: -3144881356758079375
       GooBeastGlobspit_6: -7746376875314372923
       GooBeastGlobspit_7: 4481024638998467608
-      GooBeastGlobspit_8: 6728134100323125098
-      GooBeastGlobspit_9: 5647589024547738608
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -8,12 +8,16 @@ public class Debris : MonoBehaviour
     public GameObject shootPrefab;
 
     [Header("Optional Replacement")]
-    public GameObject replaceOnGroundPrefab; // NEW: prefab to spawn on impact
+    public GameObject replaceOnGroundPrefab; // prefab to spawn on impact
 
     public float shootForce = 6f;
 
     [Header("Optional Ground Lifetime")]
     public float stayOnGroundTime = 0f; // 0 = destroy immediately like normal debris
+
+    [Header("Bounds Check")]
+    public float minX = -1f; // left bound
+    public float maxX = 12f; // right bound
 
     private bool hasLanded = false;
 
@@ -30,6 +34,16 @@ public class Debris : MonoBehaviour
             float randomStart = Random.Range(0f, 1f);
             anim.Play(0, -1, randomStart);
             anim.speed = Random.Range(0.8f, 1.2f);
+        }
+    }
+
+    void Update()
+    {
+        // Destroy if out of horizontal bounds
+        float x = transform.position.x;
+        if (x < minX || x > maxX)
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -64,7 +78,7 @@ public class Debris : MonoBehaviour
 
             SpawnParticles();
             ShootObjects();
-            ReplaceObject(); // NEW
+            ReplaceObject();
 
             if (stayOnGroundTime <= 0f)
             {
@@ -113,7 +127,6 @@ public class Debris : MonoBehaviour
 
     void ReplaceObject()
     {
-        // Only do something if a prefab is assigned
         if (replaceOnGroundPrefab == null) return;
 
         Instantiate(
