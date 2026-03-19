@@ -6,16 +6,24 @@ public class FightController : MonoBehaviour
     [System.Serializable]
     public class Attack
     {
-        public string animationTrigger;      // Animator trigger name
-        public MonoBehaviour attackPattern;  // Script with SpawnWave()
+        public string animationTrigger;
+        public MonoBehaviour attackPattern;
 
-        public float spawnDelay = 0.4f;      // Delay before debris spawns
-        public float attackDuration = 2f;    // Total attack time
+        public float spawnDelay = 0.4f;
+        public float attackDuration = 2f;
     }
 
     [Header("Animators")]
     public Animator defenderAnimator;
     public Animator monsterAnimator;
+
+    [Header("Sprite Renderers")]
+    public SpriteRenderer defenderRenderer;
+    public SpriteRenderer monsterRenderer;
+
+    [Header("Sorting Settings")]
+    public int baseSortingOrder = 0;
+    public int attackSortingBoost = 5; // how much higher attacker goes
 
     [Header("Defender Attacks")]
     public Attack[] defenderAttacks;
@@ -30,20 +38,23 @@ public class FightController : MonoBehaviour
 
     void Start()
     {
+        // Ensure both start at same layer
+        defenderRenderer.sortingOrder = baseSortingOrder;
+        monsterRenderer.sortingOrder = baseSortingOrder;
+
         StartCoroutine(FightLoop());
     }
 
     IEnumerator FightLoop()
     {
-        // Small delay before battle starts
         yield return new WaitForSeconds(2f);
 
         while (true)
         {
             if (defenderTurn)
-                yield return StartCoroutine(DoAttack(defenderAnimator, defenderAttacks));
+                yield return StartCoroutine(DoAttack(defenderAnimator, defenderAttacks, defenderRenderer, monsterRenderer));
             else
-                yield return StartCoroutine(DoAttack(monsterAnimator, gooBeastAttacks));
+                yield return StartCoroutine(DoAttack(monsterAnimator, gooBeastAttacks, monsterRenderer, defenderRenderer));
 
             defenderTurn = !defenderTurn;
 
@@ -51,12 +62,16 @@ public class FightController : MonoBehaviour
         }
     }
 
-    IEnumerator DoAttack(Animator anim, Attack[] attacks)
+    IEnumerator DoAttack(Animator anim, Attack[] attacks, SpriteRenderer attacker, SpriteRenderer defender)
     {
         if (attacks.Length == 0)
             yield break;
 
         Attack chosen = attacks[Random.Range(0, attacks.Length)];
+
+        // Bring attacker to front
+        attacker.sortingOrder = baseSortingOrder + attackSortingBoost;
+        defender.sortingOrder = baseSortingOrder;
 
         // Play animation
         if (anim != null && chosen.animationTrigger != "")
@@ -65,14 +80,16 @@ public class FightController : MonoBehaviour
         // Wait until impact moment
         yield return new WaitForSeconds(chosen.spawnDelay);
 
-        // Trigger debris or other attack pattern
         if (chosen.attackPattern != null)
             chosen.attackPattern.SendMessage("SpawnWave");
 
-        // Wait remaining attack time
         float remainingTime = chosen.attackDuration - chosen.spawnDelay;
 
         if (remainingTime > 0)
             yield return new WaitForSeconds(remainingTime);
+
+        // Reset both back to normal
+        attacker.sortingOrder = baseSortingOrder;
+        defender.sortingOrder = baseSortingOrder;
     }
 }
