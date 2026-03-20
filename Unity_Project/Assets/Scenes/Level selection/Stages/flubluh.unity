@@ -2961,7 +2961,7 @@ MonoBehaviour:
   verticalSteps: 3
   minX: 0.5
   maxX: 9.5
-  objectsPerWave: 1
+  objectsPerWave: 2
   quickSpawnDelay: 0.4
   useAngularVelocity: 1
   minAngularVelocity: -400
