@@ -23,7 +23,7 @@ public class FightController : MonoBehaviour
 
     [Header("Sorting Settings")]
     public int baseSortingOrder = 0;
-    public int attackSortingBoost = 5; // how much higher attacker goes
+    public int attackSortingBoost = 5;
 
     [Header("Defender Attacks")]
     public Attack[] defenderAttacks;
@@ -34,11 +34,14 @@ public class FightController : MonoBehaviour
     [Header("Battle Timing")]
     public float timeBetweenAttacks = 1f;
 
+    [Header("Difficulty Scaling")]
+    public float minTimeBetweenAttacks = 0.2f;
+    public float speedIncreaseRate = 0.05f;
+
     private bool defenderTurn = true;
 
     void Start()
     {
-        // Ensure both start at same layer
         defenderRenderer.sortingOrder = baseSortingOrder;
         monsterRenderer.sortingOrder = baseSortingOrder;
 
@@ -58,6 +61,12 @@ public class FightController : MonoBehaviour
 
             defenderTurn = !defenderTurn;
 
+            // Gradually decrease time between attacks
+            timeBetweenAttacks = Mathf.Max(
+                minTimeBetweenAttacks,
+                timeBetweenAttacks - speedIncreaseRate
+            );
+
             yield return new WaitForSeconds(timeBetweenAttacks);
         }
     }
@@ -69,15 +78,12 @@ public class FightController : MonoBehaviour
 
         Attack chosen = attacks[Random.Range(0, attacks.Length)];
 
-        // Bring attacker to front
         attacker.sortingOrder = baseSortingOrder + attackSortingBoost;
         defender.sortingOrder = baseSortingOrder;
 
-        // Play animation
         if (anim != null && chosen.animationTrigger != "")
             anim.SetTrigger(chosen.animationTrigger);
 
-        // Wait until impact moment
         yield return new WaitForSeconds(chosen.spawnDelay);
 
         if (chosen.attackPattern != null)
@@ -88,7 +94,6 @@ public class FightController : MonoBehaviour
         if (remainingTime > 0)
             yield return new WaitForSeconds(remainingTime);
 
-        // Reset both back to normal
         attacker.sortingOrder = baseSortingOrder;
         defender.sortingOrder = baseSortingOrder;
     }

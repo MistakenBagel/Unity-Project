@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2407718515580500882}
   - component: {fileID: 6083272462944395024}
   - component: {fileID: -5275085389731992839}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GooBounce
   m_TagString: Hazard
   m_Icon: {fileID: 0}

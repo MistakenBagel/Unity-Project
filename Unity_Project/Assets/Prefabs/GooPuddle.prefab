@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2882446802131875124}
   - component: {fileID: 2155380874586336894}
   - component: {fileID: -2264186171373756793}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GooPuddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

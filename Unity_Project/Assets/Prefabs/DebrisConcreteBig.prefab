@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1822042833805261374}
   - component: {fileID: 2266685928884817159}
   - component: {fileID: 1767052632490594277}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisConcreteBig
   m_TagString: Hazard
   m_Icon: {fileID: 0}

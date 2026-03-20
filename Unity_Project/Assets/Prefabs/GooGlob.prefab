@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2771729537786297628}
   - component: {fileID: 2947473387364135038}
   - component: {fileID: 8206430962301699846}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GooGlob
   m_TagString: Hazard
   m_Icon: {fileID: 0}
