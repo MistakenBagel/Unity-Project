@@ -14,7 +14,9 @@ public class DebrisFall : MonoBehaviour
     public float minX = 0.5f;
     public float maxX = 10.5f;
 
-    public int objectsPerWave = 5;
+    [Header("Objects Per Wave Range")]
+    public int minObjectsPerWave = 1;
+    public int maxObjectsPerWave = 2;
 
     public float quickSpawnDelay = 0.15f;
 
@@ -63,9 +65,12 @@ public class DebrisFall : MonoBehaviour
             }
         }
 
+        // Pick random number of objects for this wave
+        int objectsThisWave = Random.Range(minObjectsPerWave, maxObjectsPerWave + 1);
+
         List<Vector2> chosenPositions = new List<Vector2>();
 
-        for (int i = 0; i < objectsPerWave && availablePositions.Count > 0; i++)
+        for (int i = 0; i < objectsThisWave && availablePositions.Count > 0; i++)
         {
             int index = Random.Range(0, availablePositions.Count);
             Vector2 chosen = availablePositions[index];
@@ -106,12 +111,10 @@ public class DebrisFall : MonoBehaviour
 
             if (isLeftSide)
             {
-                // NOW counterclockwise (negative)
                 spin = Random.Range(minAngularVelocity, -50f);
             }
             else if (isRightSide)
             {
-                // NOW clockwise (positive)
                 spin = Random.Range(50f, maxAngularVelocity);
             }
             else
@@ -122,18 +125,17 @@ public class DebrisFall : MonoBehaviour
             rb.angularVelocity = spin;
         }
 
-        // Movement stays the same
         if (useHorizontalForce)
         {
             float forceX;
 
             if (isLeftSide)
             {
-                forceX = Random.Range(0.5f, maxHorizontalForce); // push right
+                forceX = Random.Range(0.5f, maxHorizontalForce);
             }
             else if (isRightSide)
             {
-                forceX = Random.Range(minHorizontalForce, -0.5f); // push left
+                forceX = Random.Range(minHorizontalForce, -0.5f);
             }
             else
             {

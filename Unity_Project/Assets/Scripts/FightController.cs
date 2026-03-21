@@ -25,6 +25,9 @@ public class FightController : MonoBehaviour
     public int baseSortingOrder = 0;
     public int attackSortingBoost = 5;
 
+    [Header("Animation Triggers")]
+    public string hurtTrigger = "Hurt";
+
     [Header("Defender Attacks")]
     public Attack[] defenderAttacks;
 
@@ -61,7 +64,6 @@ public class FightController : MonoBehaviour
 
             defenderTurn = !defenderTurn;
 
-            // Gradually decrease time between attacks
             timeBetweenAttacks = Mathf.Max(
                 minTimeBetweenAttacks,
                 timeBetweenAttacks - speedIncreaseRate
@@ -88,6 +90,13 @@ public class FightController : MonoBehaviour
 
         if (chosen.attackPattern != null)
             chosen.attackPattern.SendMessage("SpawnWave");
+
+        // Trigger hurt animation on the defender
+        Animator defenderAnim = defender.GetComponent<Animator>();
+        if (defenderAnim != null && hurtTrigger != "")
+        {
+            defenderAnim.SetTrigger(hurtTrigger);
+        }
 
         float remainingTime = chosen.attackDuration - chosen.spawnDelay;
 

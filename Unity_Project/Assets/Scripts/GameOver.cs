@@ -5,6 +5,9 @@ public class PlayerCollisionHandler : MonoBehaviour
     [Header("UI Panel to Enable on Death")]
     public GameObject panel;
 
+    [Header("Death Particles")]
+    public GameObject deathParticlesPrefab;
+
     private bool isDead = false; // prevents double-triggering
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -24,6 +27,12 @@ public class PlayerCollisionHandler : MonoBehaviour
         if (isDead) return;
 
         isDead = true;
+
+        // Spawn particles at player position
+        if (deathParticlesPrefab != null)
+        {
+            Instantiate(deathParticlesPrefab, transform.position, Quaternion.identity);
+        }
 
         // Disable player
         gameObject.SetActive(false);

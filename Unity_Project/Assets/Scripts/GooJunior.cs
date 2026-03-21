@@ -60,6 +60,13 @@ public class GooJunior : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        // NEW: Destroy if hitting a hazard
+        if (collision.gameObject.CompareTag("Hazard"))
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         // Ground check
         if (((1 << collision.gameObject.layer) & groundLayer) != 0)
         {

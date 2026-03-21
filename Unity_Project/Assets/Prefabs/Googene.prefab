@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3231646245825061077}
   - component: {fileID: 8260865938277135487}
   - component: {fileID: 7563180797242176286}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Googene
   m_TagString: Googene
   m_Icon: {fileID: 0}
