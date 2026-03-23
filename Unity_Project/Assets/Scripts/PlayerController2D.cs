@@ -10,11 +10,19 @@ public class PlayerController2D : MonoBehaviour
 
     public float jumpCutMultiplier = 0.5f;
 
+    public bool canJump = true;
+
     private Rigidbody2D rb;
     private Animator animator;
 
     private bool isGrounded = true;
     private bool isCrouching = false;
+
+    // Goo effect variables
+    private float speedMultiplier = 1f;
+    private float gooTimer = 0f;
+    private float gooDuration = 0f;
+    private bool gooDisablesJump = false;
 
     void Start()
     {
@@ -29,6 +37,7 @@ public class PlayerController2D : MonoBehaviour
 
     void Update()
     {
+        HandleGooEffect();
         Crouch();
         Move();
         Jump();
@@ -53,7 +62,7 @@ public class PlayerController2D : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
             move = 1;
 
-        float currentSpeed = isCrouching ? moveSpeed * 0.5f : moveSpeed;
+        float currentSpeed = (isCrouching ? moveSpeed * 0.5f : moveSpeed) * speedMultiplier;
 
         rb.linearVelocity = new Vector2(move * currentSpeed, rb.linearVelocity.y);
 
@@ -67,7 +76,7 @@ public class PlayerController2D : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isCrouching)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isCrouching && canJump)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isGrounded = false;
@@ -138,6 +147,34 @@ public class PlayerController2D : MonoBehaviour
         {
             animator.Play("Idle");
         }
+    }
+
+   void HandleGooEffect()
+    {
+        if (gooTimer > 0)
+        {
+            gooTimer -= Time.deltaTime;
+
+            if (gooTimer <= 0)
+            {
+                speedMultiplier = 1f;
+                canJump = true;
+                gooDisablesJump = false;
+            }
+        }
+    }
+
+    public void ApplyGooEffect(float slowMultiplier, float duration, bool disableJump)
+    {
+        speedMultiplier = slowMultiplier;
+
+        gooDuration = duration;
+        gooTimer = duration;
+
+        gooDisablesJump = disableJump;
+
+        if (disableJump)
+            canJump = false;
     }
 
     void OnCollisionEnter2D(Collision2D collision)

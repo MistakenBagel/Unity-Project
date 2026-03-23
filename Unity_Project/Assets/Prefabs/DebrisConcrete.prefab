@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4481015859350128536}
   - component: {fileID: 6395125435184032786}
   - component: {fileID: 1238412668109876927}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisConcrete
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7177843791883479034, guid: c5c2a80ea411f9b47ae9b29aeac244ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -194,4 +194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Debris
   destroyParticles: {fileID: 3254253784775463448, guid: 28dcf7fde92b11f47bc11325cd8ab67a, type: 3}
   shootPrefab: {fileID: 0}
+  replaceOnGroundPrefab: {fileID: 0}
   shootForce: 6
+  stayOnGroundTime: 0
+  minX: -2
+  maxX: 11

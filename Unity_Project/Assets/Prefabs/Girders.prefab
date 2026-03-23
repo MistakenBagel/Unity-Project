@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1893818236396518066}
   - component: {fileID: 5750862882844687067}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisGirder_0
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6214684965072912201, guid: 15c490cc98ec1454b86e0890fc512ee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2519182176324305234}
   - component: {fileID: 330041359654995331}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisGirder_0
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6214684965072912201, guid: 15c490cc98ec1454b86e0890fc512ee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -192,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9027532977629407807}
   - component: {fileID: 85708746059000561}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisGirder_2
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -261,7 +261,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -693084685, guid: 15c490cc98ec1454b86e0890fc512ee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 2756449437526881932}
   - component: {fileID: 3339994796064383601}
   - component: {fileID: 856864643012780839}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Girder5
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -398,7 +398,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Debris
   destroyParticles: {fileID: 7091793901095659804, guid: d0e695ad4f33d814c9c1e7c6c7f8c7d3, type: 3}
   shootPrefab: {fileID: 0}
+  replaceOnGroundPrefab: {fileID: 0}
   shootForce: 6
+  stayOnGroundTime: 0
+  minX: -1
+  maxX: 12
 --- !u!1 &1832981003181931108
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3413227812809813859}
   - component: {fileID: 80544723523915042}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisGirder_1
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -478,7 +482,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -613679486, guid: 15c490cc98ec1454b86e0890fc512ee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -502,7 +506,7 @@ GameObject:
   - component: {fileID: 3763655403544409244}
   - component: {fileID: 2607427314044067464}
   - component: {fileID: 6939890170125018097}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Girder2
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -615,7 +619,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Debris
   destroyParticles: {fileID: 7091793901095659804, guid: d0e695ad4f33d814c9c1e7c6c7f8c7d3, type: 3}
   shootPrefab: {fileID: 0}
+  replaceOnGroundPrefab: {fileID: 0}
   shootForce: 6
+  stayOnGroundTime: 0
+  minX: -1
+  maxX: 12
 --- !u!1 &2096384084173867221
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,7 +636,7 @@ GameObject:
   - component: {fileID: 870249546812354541}
   - component: {fileID: 315425832514226676}
   - component: {fileID: 6863402546043881116}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Girder1
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -739,7 +747,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Debris
   destroyParticles: {fileID: 7091793901095659804, guid: d0e695ad4f33d814c9c1e7c6c7f8c7d3, type: 3}
   shootPrefab: {fileID: 0}
+  replaceOnGroundPrefab: {fileID: 0}
   shootForce: 6
+  stayOnGroundTime: 0
+  minX: -1
+  maxX: 12
 --- !u!1 &2155357951269083918
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,7 +762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9119001675681758684}
   - component: {fileID: 8572798839774526373}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisGirder_2
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -819,7 +831,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -693084685, guid: 15c490cc98ec1454b86e0890fc512ee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -841,7 +853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1722246656798777695}
   - component: {fileID: 7493961625508014340}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisGirder_0
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -910,7 +922,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6214684965072912201, guid: 15c490cc98ec1454b86e0890fc512ee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -932,7 +944,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4308350425966902814}
   - component: {fileID: 2790046942533873800}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisGirder_1 (1)
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -1001,7 +1013,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -613679486, guid: 15c490cc98ec1454b86e0890fc512ee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1023,7 +1035,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5319617199775622184}
   - component: {fileID: 3607093924569440064}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisGirder_1 (1)
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -1092,7 +1104,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -613679486, guid: 15c490cc98ec1454b86e0890fc512ee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1116,7 +1128,7 @@ GameObject:
   - component: {fileID: 8840050183747463889}
   - component: {fileID: 338478789650317447}
   - component: {fileID: 5835957866239984711}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Girder4
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -1227,7 +1239,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Debris
   destroyParticles: {fileID: 7091793901095659804, guid: d0e695ad4f33d814c9c1e7c6c7f8c7d3, type: 3}
   shootPrefab: {fileID: 0}
+  replaceOnGroundPrefab: {fileID: 0}
   shootForce: 6
+  stayOnGroundTime: 0
+  minX: -1
+  maxX: 12
 --- !u!1 &4495320782977373216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,7 +1254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8371811401437525318}
   - component: {fileID: 1100160755092547260}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisGirder_1
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -1307,7 +1323,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -613679486, guid: 15c490cc98ec1454b86e0890fc512ee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1328,7 +1344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1232620028354590097}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Girders
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -1365,7 +1381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2967725624780512956}
   - component: {fileID: 1537007664648339558}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisGirder_2
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -1434,7 +1450,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -693084685, guid: 15c490cc98ec1454b86e0890fc512ee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1456,7 +1472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2230869460680633235}
   - component: {fileID: 3706481125690581035}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisGirder_2
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -1525,7 +1541,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -693084685, guid: 15c490cc98ec1454b86e0890fc512ee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1549,7 +1565,7 @@ GameObject:
   - component: {fileID: 8548116299779763104}
   - component: {fileID: 6659889268394272139}
   - component: {fileID: 1205219042003220792}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Girder3
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -1661,7 +1677,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Debris
   destroyParticles: {fileID: 7091793901095659804, guid: d0e695ad4f33d814c9c1e7c6c7f8c7d3, type: 3}
   shootPrefab: {fileID: 0}
+  replaceOnGroundPrefab: {fileID: 0}
   shootForce: 6
+  stayOnGroundTime: 0
+  minX: -1
+  maxX: 12
 --- !u!1 &7684734315755089847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,7 +1692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1405726096482232146}
   - component: {fileID: 2304314671507422755}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisGirder_1
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -1741,7 +1761,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -613679486, guid: 15c490cc98ec1454b86e0890fc512ee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1763,7 +1783,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1256076212532062962}
   - component: {fileID: 953803459871213692}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisGirder_0
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -1832,7 +1852,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6214684965072912201, guid: 15c490cc98ec1454b86e0890fc512ee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1854,7 +1874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6743579139193557458}
   - component: {fileID: 8422434407342308914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisGirder_2
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -1923,7 +1943,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -693084685, guid: 15c490cc98ec1454b86e0890fc512ee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1945,7 +1965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9208661988316680847}
   - component: {fileID: 7624498906253354303}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DebrisGirder_0
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -2014,7 +2034,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6214684965072912201, guid: 15c490cc98ec1454b86e0890fc512ee2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

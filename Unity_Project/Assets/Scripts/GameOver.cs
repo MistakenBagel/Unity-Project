@@ -5,23 +5,46 @@ public class PlayerCollisionHandler : MonoBehaviour
     [Header("UI Panel to Enable on Death")]
     public GameObject panel;
 
+    [Header("Death Particles")]
+    public GameObject deathParticlesPrefab;
+
+    private bool isDead = false; // prevents double-triggering
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Check if the object we collided with has the tag "Hazard"
+        if (isDead) return;
+
+        // Check for hazards
         if (collision.gameObject.CompareTag("Hazard"))
         {
-            // Disable the player GameObject
-            gameObject.SetActive(false);
+            Die();
+        }
+    }
 
-            // Enable the UI panel
-            if (panel != null)
-            {
-                panel.SetActive(true);
-            }
-            else
-            {
-                Debug.LogWarning("Panel is not assigned in the inspector!");
-            }
+    // This is what GooJunior will call
+    public void Die()
+    {
+        if (isDead) return;
+
+        isDead = true;
+
+        // Spawn particles at player position
+        if (deathParticlesPrefab != null)
+        {
+            Instantiate(deathParticlesPrefab, transform.position, Quaternion.identity);
+        }
+
+        // Disable player
+        gameObject.SetActive(false);
+
+        // Enable UI panel
+        if (panel != null)
+        {
+            panel.SetActive(true);
+        }
+        else
+        {
+            Debug.LogWarning("Panel is not assigned in the inspector!");
         }
     }
 }
