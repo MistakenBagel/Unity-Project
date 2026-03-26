@@ -3064,6 +3064,7 @@ MonoBehaviour:
   crouchCollider: {fileID: 1159463976}
   jumpCutMultiplier: 0.5
   canJump: 1
+  gooColor: {r: 0.34901962, g: 0.82745105, b: 0.19215688, a: 1}
 --- !u!61 &1683399474
 BoxCollider2D:
   m_ObjectHideFlags: 0

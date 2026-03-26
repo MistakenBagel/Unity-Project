@@ -8,16 +8,16 @@ public class Debris : MonoBehaviour
     public GameObject shootPrefab;
 
     [Header("Optional Replacement")]
-    public GameObject replaceOnGroundPrefab; // prefab to spawn on impact
+    public GameObject replaceOnGroundPrefab;
 
     public float shootForce = 6f;
 
     [Header("Optional Ground Lifetime")]
-    public float stayOnGroundTime = 0f; // 0 = destroy immediately like normal debris
+    public float stayOnGroundTime = 0f;
 
     [Header("Bounds Check")]
-    public float minX = -1f; // left bound
-    public float maxX = 12f; // right bound
+    public float minX = -1f;
+    public float maxX = 12f;
 
     private bool hasLanded = false;
 
@@ -25,10 +25,8 @@ public class Debris : MonoBehaviour
     {
         anim = GetComponent<Animator>();
 
-        // Prevent hazards from colliding with other hazards
         IgnoreHazardCollisions();
 
-        // Start animation at random frame
         if (anim != null)
         {
             float randomStart = Random.Range(0f, 1f);
@@ -39,7 +37,6 @@ public class Debris : MonoBehaviour
 
     void Update()
     {
-        // Destroy if out of horizontal bounds
         float x = transform.position.x;
         if (x < minX || x > maxX)
         {
@@ -52,7 +49,6 @@ public class Debris : MonoBehaviour
         if (!CompareTag("Hazard")) return;
 
         Collider2D myCollider = GetComponent<Collider2D>();
-
         GameObject[] hazards = GameObject.FindGameObjectsWithTag("Hazard");
 
         foreach (GameObject hazard in hazards)
@@ -70,13 +66,19 @@ public class Debris : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        // Spawn particles on EVERY collision
+        if (collision.contactCount > 0)
+        {
+            SpawnParticles(collision.contacts[0].point);
+        }
+
+        // Ground-specific logic (only once)
         if (hasLanded) return;
 
         if (collision.gameObject.CompareTag("Ground"))
         {
             hasLanded = true;
 
-            SpawnParticles();
             ShootObjects();
             ReplaceObject();
 
@@ -91,13 +93,13 @@ public class Debris : MonoBehaviour
         }
     }
 
-    void SpawnParticles()
+    void SpawnParticles(Vector2 position)
     {
         if (destroyParticles != null)
         {
             GameObject particles = Instantiate(
                 destroyParticles,
-                transform.position,
+                position,
                 Quaternion.identity
             );
 
