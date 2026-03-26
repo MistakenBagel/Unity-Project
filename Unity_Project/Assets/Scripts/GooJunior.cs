@@ -10,6 +10,10 @@ public class GooJunior : MonoBehaviour
     public float minHopCooldown = 1f;
     public float maxHopCooldown = 2f;
 
+    [Header("Effects")]
+    public GameObject destroyParticles;
+    public GameObject collisionParticles; // NEW
+
     private float hopTimer;
 
     private Transform player;
@@ -35,10 +39,8 @@ public class GooJunior : MonoBehaviour
 
         hopTimer -= Time.deltaTime;
 
-        // Flip sprite
         sr.flipX = player.position.x < transform.position.x;
 
-        // Hop toward player
         if (hopTimer <= 0f && isGrounded)
         {
             HopTowardsPlayer();
@@ -58,21 +60,38 @@ public class GooJunior : MonoBehaviour
         isGrounded = false;
     }
 
+    void SpawnCollisionParticles(Vector2 position)
+    {
+        if (collisionParticles != null)
+        {
+            GameObject particles = Instantiate(
+                collisionParticles,
+                position,
+                Quaternion.identity
+            );
+
+            Destroy(particles, 2f);
+        }
+    }
+
+    void DestroyWithParticles()
+    {
+        if (destroyParticles != null)
+        {
+            GameObject particles = Instantiate(
+                destroyParticles,
+                transform.position,
+                Quaternion.identity
+            );
+
+            Destroy(particles, 2f);
+        }
+
+        Destroy(gameObject);
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // NEW: Destroy if hitting a hazard
-        if (collision.gameObject.CompareTag("Hazard"))
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        // Ground check
-        if (((1 << collision.gameObject.layer) & groundLayer) != 0)
-        {
-            isGrounded = true;
-        }
-
         // Ignore other slimes
         if (collision.gameObject.CompareTag("Googene"))
         {
@@ -83,6 +102,25 @@ public class GooJunior : MonoBehaviour
             return;
         }
 
+        // Spawn collision particles at first contact point
+        if (collision.contactCount > 0)
+        {
+            SpawnCollisionParticles(collision.contacts[0].point);
+        }
+
+        // Destroy if hitting a hazard
+        if (collision.gameObject.CompareTag("Hazard"))
+        {
+            DestroyWithParticles();
+            return;
+        }
+
+        // Ground check
+        if (((1 << collision.gameObject.layer) & groundLayer) != 0)
+        {
+            isGrounded = true;
+        }
+
         // Player interaction
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -90,7 +128,6 @@ public class GooJunior : MonoBehaviour
 
             foreach (ContactPoint2D contact in collision.contacts)
             {
-                // Player hit from above
                 if (contact.normal.y < -0.5f)
                 {
                     stomped = true;
@@ -100,19 +137,16 @@ public class GooJunior : MonoBehaviour
 
             if (stomped)
             {
-                // Bounce player
                 Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
                 if (playerRb != null)
                 {
                     playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, 6f);
                 }
 
-                // Destroy slime
-                Destroy(gameObject);
+                DestroyWithParticles();
             }
             else
             {
-                // Kill player ONLY if not stomped
                 collision.gameObject.SendMessage("Die", SendMessageOptions.DontRequireReceiver);
             }
         }

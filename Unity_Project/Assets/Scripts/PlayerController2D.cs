@@ -14,6 +14,7 @@ public class PlayerController2D : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator animator;
+    private SpriteRenderer sr;
 
     private bool isGrounded = true;
     private bool isCrouching = false;
@@ -24,10 +25,17 @@ public class PlayerController2D : MonoBehaviour
     private float gooDuration = 0f;
     private bool gooDisablesJump = false;
 
+    [Header("Goo Visual")]
+    public Color gooColor = Color.green;
+    private Color originalColor;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
+
+        originalColor = sr.color;
 
         standingCollider.enabled = true;
         crouchCollider.enabled = false;
@@ -149,7 +157,7 @@ public class PlayerController2D : MonoBehaviour
         }
     }
 
-   void HandleGooEffect()
+    void HandleGooEffect()
     {
         if (gooTimer > 0)
         {
@@ -160,6 +168,9 @@ public class PlayerController2D : MonoBehaviour
                 speedMultiplier = 1f;
                 canJump = true;
                 gooDisablesJump = false;
+
+                // Restore original color
+                sr.color = originalColor;
             }
         }
     }
@@ -175,6 +186,9 @@ public class PlayerController2D : MonoBehaviour
 
         if (disableJump)
             canJump = false;
+
+        // Apply goo color
+        sr.color = gooColor;
     }
 
     void OnCollisionEnter2D(Collision2D collision)

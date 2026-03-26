@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc5efe851c564542adab8468b499476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Debris
-  destroyParticles: {fileID: 0}
+  destroyParticles: {fileID: 4289234332757139426, guid: 704838a35cd5e924a871aee1eca3e403, type: 3}
   shootPrefab: {fileID: 0}
   replaceOnGroundPrefab: {fileID: 0}
   shootForce: 6

@@ -206,6 +206,8 @@ MonoBehaviour:
   hopForce: 5
   minHopCooldown: 1
   maxHopCooldown: 2
+  destroyParticles: {fileID: 8914977364002949622, guid: f61833a6c7a079d4db6e21b62cbd0267, type: 3}
+  collisionParticles: {fileID: 4289234332757139426, guid: 704838a35cd5e924a871aee1eca3e403, type: 3}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
