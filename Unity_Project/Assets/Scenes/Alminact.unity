@@ -1183,6 +1183,7 @@ GameObject:
   - component: {fileID: 1700579271}
   - component: {fileID: 1700579270}
   - component: {fileID: 1700579269}
+  - component: {fileID: 1700579272}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -1253,7 +1254,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1700579270}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1700579272}
+        m_TargetAssemblyTypeName: PanelCycler, Assembly-CSharp
+        m_MethodName: OnButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1700579270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1292,6 +1305,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700579267}
   m_CullTransparentMesh: 1
+--- !u!114 &1700579272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700579267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7d872a039646a479d3e140c5d33f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PanelCycler
+  panels:
+  - {fileID: 1551537317}
+  - {fileID: 1540414819}
+  - {fileID: 383166161}
+  - {fileID: 643039516}
+  - {fileID: 412350419}
+  - {fileID: 576582346}
+  - {fileID: 1094590870}
 --- !u!1 &1956236711
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,16 +1,25 @@
 using UnityEngine;
 
-public class Almiinactcyclingscript : MonoBehaviour
+public class PanelCycler : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GameObject[] panels; // Assign 7 panels in Inspector
 
-    // Update is called once per frame
-    void Update()
+    private int currentIndex = -1;
+
+    public void OnButtonPressed()
     {
-        
+        if (panels.Length == 0) return;
+
+        // Disable all panels first
+        foreach (GameObject panel in panels)
+        {
+            panel.SetActive(false);
+        }
+
+        // Move to next index
+        currentIndex = (currentIndex + 1) % panels.Length;
+
+        // Enable only the current panel
+        panels[currentIndex].SetActive(true);
     }
 }
