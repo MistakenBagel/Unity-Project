@@ -29,6 +29,10 @@ public class PlayerController2D : MonoBehaviour
     public Color gooColor = Color.green;
     private Color originalColor;
 
+    [Header("Audio")]
+    public AudioClip jumpSound;
+    public AudioClip deathSound;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -90,6 +94,8 @@ public class PlayerController2D : MonoBehaviour
             isGrounded = false;
 
             animator.Play("Jump");
+
+            PlayJumpSound();
         }
     }
 
@@ -169,7 +175,6 @@ public class PlayerController2D : MonoBehaviour
                 canJump = true;
                 gooDisablesJump = false;
 
-                // Restore original color
                 sr.color = originalColor;
             }
         }
@@ -187,7 +192,6 @@ public class PlayerController2D : MonoBehaviour
         if (disableJump)
             canJump = false;
 
-        // Apply goo color
         sr.color = gooColor;
     }
 
@@ -196,6 +200,22 @@ public class PlayerController2D : MonoBehaviour
         if (collision.contacts[0].normal.y > 0.5)
         {
             isGrounded = true;
+        }
+    }
+
+    void PlayJumpSound()
+    {
+        if (jumpSound != null)
+        {
+            AudioSource.PlayClipAtPoint(jumpSound, transform.position);
+        }
+    }
+
+    public void PlayDeathSound()
+    {
+        if (deathSound != null)
+        {
+            AudioSource.PlayClipAtPoint(deathSound, transform.position);
         }
     }
 }

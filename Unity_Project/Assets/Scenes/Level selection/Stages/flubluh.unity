@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 159287465}
   - component: {fileID: 159287464}
   m_Layer: 0
-  m_Name: MiniBackground_0
+  m_Name: MiniBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -400,12 +400,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159287463}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.5, y: 4, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.72135, y: 4.72597, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1123013722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &173985750
 GameObject:
@@ -813,13 +813,13 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574909779}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: f377b340c9745124fa2692a3a4f65371, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1742,6 +1742,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1683399471}
+  - {fileID: 159287465}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1123302710
@@ -3155,6 +3156,8 @@ MonoBehaviour:
   jumpCutMultiplier: 0.5
   canJump: 1
   gooColor: {r: 0.34901962, g: 0.82745105, b: 0.19215688, a: 1}
+  jumpSound: {fileID: 8300000, guid: be46cc97e5bf287439e5f912356624e3, type: 3}
+  deathSound: {fileID: 8300000, guid: bb38549f5e79bfa43b981c9e39808c13, type: 3}
 --- !u!61 &1683399474
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3742,4 +3745,3 @@ SceneRoots:
   - {fileID: 173985752}
   - {fileID: 1323651784}
   - {fileID: 1595426524}
-  - {fileID: 159287465}

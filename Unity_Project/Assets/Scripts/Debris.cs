@@ -19,6 +19,9 @@ public class Debris : MonoBehaviour
     public float minX = -1f;
     public float maxX = 12f;
 
+    [Header("Audio")]
+    public AudioClip destroySound;
+
     private bool hasLanded = false;
 
     void Start()
@@ -40,6 +43,7 @@ public class Debris : MonoBehaviour
         float x = transform.position.x;
         if (x < minX || x > maxX)
         {
+            PlayDestroySound();
             Destroy(gameObject);
         }
     }
@@ -72,7 +76,6 @@ public class Debris : MonoBehaviour
             SpawnParticles(collision.contacts[0].point);
         }
 
-        // Ground-specific logic (only once)
         if (hasLanded) return;
 
         if (collision.gameObject.CompareTag("Ground"))
@@ -81,6 +84,8 @@ public class Debris : MonoBehaviour
 
             ShootObjects();
             ReplaceObject();
+
+            PlayDestroySound();
 
             if (stayOnGroundTime <= 0f)
             {
@@ -136,5 +141,13 @@ public class Debris : MonoBehaviour
             transform.position,
             Quaternion.identity
         );
+    }
+
+    void PlayDestroySound()
+    {
+        if (destroySound != null)
+        {
+            AudioSource.PlayClipAtPoint(destroySound, transform.position);
+        }
     }
 }
