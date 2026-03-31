@@ -199,3 +199,9 @@ MonoBehaviour:
   stayOnGroundTime: 0
   minX: -2
   maxX: 11
+  destroySound: {fileID: 0}
+  collisionSound: {fileID: 8300000, guid: 26f0c0ec611be084392077d3664f4ff0, type: 3}
+  destroyVolume: 0.7
+  collisionVolume: 0.5
+  minPitch: 0.8
+  maxPitch: 1.2

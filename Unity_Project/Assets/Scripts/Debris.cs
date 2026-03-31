@@ -21,6 +21,14 @@ public class Debris : MonoBehaviour
 
     [Header("Audio")]
     public AudioClip destroySound;
+    public AudioClip collisionSound;
+
+    [Range(0f, 1f)] public float destroyVolume = 0.7f;
+    [Range(0f, 1f)] public float collisionVolume = 0.5f;
+
+    [Header("Pitch Variation")]
+    public float minPitch = 0.9f;
+    public float maxPitch = 1.1f;
 
     private bool hasLanded = false;
 
@@ -70,7 +78,8 @@ public class Debris : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // Spawn particles on EVERY collision
+        PlayCollisionSound();
+
         if (collision.contactCount > 0)
         {
             SpawnParticles(collision.contacts[0].point);
@@ -143,11 +152,31 @@ public class Debris : MonoBehaviour
         );
     }
 
+ 
+    void PlaySound(AudioClip clip, float volume)
+    {
+        if (clip == null) return;
+
+        GameObject tempGO = new GameObject("TempAudio");
+        tempGO.transform.position = transform.position;
+
+        AudioSource aSource = tempGO.AddComponent<AudioSource>();
+        aSource.clip = clip;
+        aSource.volume = volume;
+        aSource.pitch = Random.Range(minPitch, maxPitch);
+
+        aSource.Play();
+
+        Destroy(tempGO, clip.length / Mathf.Abs(aSource.pitch));
+    }
+
     void PlayDestroySound()
     {
-        if (destroySound != null)
-        {
-            AudioSource.PlayClipAtPoint(destroySound, transform.position);
-        }
+        PlaySound(destroySound, destroyVolume);
+    }
+
+    void PlayCollisionSound()
+    {
+        PlaySound(collisionSound, collisionVolume);
     }
 }

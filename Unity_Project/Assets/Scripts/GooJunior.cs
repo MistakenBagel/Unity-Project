@@ -12,7 +12,18 @@ public class GooJunior : MonoBehaviour
 
     [Header("Effects")]
     public GameObject destroyParticles;
-    public GameObject collisionParticles; // NEW
+    public GameObject collisionParticles;
+
+    [Header("Audio")]
+    public AudioClip collisionSound;
+    public AudioClip deathSound;
+
+    [Range(0f, 1f)] public float collisionVolume = 0.5f;
+    [Range(0f, 1f)] public float deathVolume = 0.7f;
+
+    [Header("Pitch Variation")]
+    public float minPitch = 0.9f;
+    public float maxPitch = 1.1f;
 
     private float hopTimer;
 
@@ -76,6 +87,9 @@ public class GooJunior : MonoBehaviour
 
     void DestroyWithParticles()
     {
+
+        PlaySound(deathSound, deathVolume);
+
         if (destroyParticles != null)
         {
             GameObject particles = Instantiate(
@@ -102,7 +116,10 @@ public class GooJunior : MonoBehaviour
             return;
         }
 
-        // Spawn collision particles at first contact point
+   
+        PlaySound(collisionSound, collisionVolume);
+
+        // Spawn collision particles
         if (collision.contactCount > 0)
         {
             SpawnCollisionParticles(collision.contacts[0].point);
@@ -158,5 +175,22 @@ public class GooJunior : MonoBehaviour
         {
             isGrounded = false;
         }
+    }
+
+    void PlaySound(AudioClip clip, float volume)
+    {
+        if (clip == null) return;
+
+        GameObject tempGO = new GameObject("TempAudio");
+        tempGO.transform.position = transform.position;
+
+        AudioSource aSource = tempGO.AddComponent<AudioSource>();
+        aSource.clip = clip;
+        aSource.volume = volume;
+        aSource.pitch = Random.Range(minPitch, maxPitch);
+
+        aSource.Play();
+
+        Destroy(tempGO, clip.length / Mathf.Abs(aSource.pitch));
     }
 }
