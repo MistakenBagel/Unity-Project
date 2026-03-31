@@ -317,7 +317,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: IMPOSTER
+  m_text: The Imposter
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7a03374dad45314b9037b48748634c8, type: 2}
   m_sharedMaterial: {fileID: -6943421310582077159, guid: b7a03374dad45314b9037b48748634c8, type: 2}
@@ -1070,7 +1070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5377358, g: 0.07666914, b: 0.06848522, a: 1}
+  m_Color: {r: 0.7433963, g: 0.42201763, b: 0.41377714, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1121,7 +1121,7 @@ Transform:
   m_GameObject: {fileID: 578683180}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -552.95996, y: 65.88, z: -9719.999}
+  m_LocalPosition: {x: -533, y: 65.88, z: -9719.999}
   m_LocalScale: {x: 108, y: 108, z: 108}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1330,7 +1330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.86792123, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.76792455, b: 0.90839493, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2609,7 +2609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.065859735, g: 0.3773585, b: 0.27626094, a: 1}
+  m_Color: {r: 0.06666666, g: 0.34946185, b: 0.3764706, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3315,8 +3315,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.999986, y: 160}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -104, y: 180.38}
+  m_SizeDelta: {x: 456.74, y: 90.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1748690227
 MonoBehaviour:
