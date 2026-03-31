@@ -208,6 +208,12 @@ MonoBehaviour:
   maxHopCooldown: 2
   destroyParticles: {fileID: 8914977364002949622, guid: f61833a6c7a079d4db6e21b62cbd0267, type: 3}
   collisionParticles: {fileID: 4289234332757139426, guid: 704838a35cd5e924a871aee1eca3e403, type: 3}
+  collisionSound: {fileID: 8300000, guid: 26f0c0ec611be084392077d3664f4ff0, type: 3}
+  deathSound: {fileID: 8300000, guid: 16498c2b1b6676140a63bce1778b586d, type: 3}
+  collisionVolume: 0.5
+  deathVolume: 0.5
+  minPitch: 0.8
+  maxPitch: 1.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 8

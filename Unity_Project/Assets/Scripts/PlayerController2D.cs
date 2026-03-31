@@ -15,6 +15,7 @@ public class PlayerController2D : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer sr;
+    private AudioSource audioSource;
 
     private bool isGrounded = true;
     private bool isCrouching = false;
@@ -33,11 +34,15 @@ public class PlayerController2D : MonoBehaviour
     public AudioClip jumpSound;
     public AudioClip deathSound;
 
+    [Range(0f, 1f)] public float jumpVolume = 0.5f;
+    [Range(0f, 1f)] public float deathVolume = 0.7f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
 
         originalColor = sr.color;
 
@@ -207,7 +212,7 @@ public class PlayerController2D : MonoBehaviour
     {
         if (jumpSound != null)
         {
-            AudioSource.PlayClipAtPoint(jumpSound, transform.position);
+            audioSource.PlayOneShot(jumpSound, jumpVolume);
         }
     }
 
@@ -215,7 +220,7 @@ public class PlayerController2D : MonoBehaviour
     {
         if (deathSound != null)
         {
-            AudioSource.PlayClipAtPoint(deathSound, transform.position);
+            audioSource.PlayOneShot(deathSound, deathVolume);
         }
     }
 }

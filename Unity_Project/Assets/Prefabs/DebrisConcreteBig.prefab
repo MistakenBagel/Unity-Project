@@ -200,3 +200,8 @@ MonoBehaviour:
   minX: -2
   maxX: 11
   destroySound: {fileID: 8300000, guid: bf864fba584ff4544bf9545d0d9c0799, type: 3}
+  collisionSound: {fileID: 0}
+  destroyVolume: 0.5
+  collisionVolume: 0.5
+  minPitch: 0.8
+  maxPitch: 1.2
