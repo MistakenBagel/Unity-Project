@@ -11,6 +11,10 @@ public class FightController : MonoBehaviour
 
         public float spawnDelay = 0.4f;
         public float attackDuration = 2f;
+
+        [Header("Audio")]
+        public AudioClip attackSound;
+        [Range(0f, 1f)] public float volume = 0.7f;
     }
 
     [Header("Animators")]
@@ -40,6 +44,10 @@ public class FightController : MonoBehaviour
     [Header("Difficulty Scaling")]
     public float minTimeBetweenAttacks = 0.2f;
     public float speedIncreaseRate = 0.05f;
+
+    [Header("Pitch Variation")]
+    public float minPitch = 0.9f;
+    public float maxPitch = 1.1f;
 
     private bool defenderTurn = true;
 
@@ -83,6 +91,9 @@ public class FightController : MonoBehaviour
         attacker.sortingOrder = baseSortingOrder + attackSortingBoost;
         defender.sortingOrder = baseSortingOrder;
 
+
+        PlaySound(chosen.attackSound, chosen.volume, attacker.transform.position);
+
         if (anim != null && chosen.animationTrigger != "")
             anim.SetTrigger(chosen.animationTrigger);
 
@@ -91,7 +102,7 @@ public class FightController : MonoBehaviour
         if (chosen.attackPattern != null)
             chosen.attackPattern.SendMessage("SpawnWave");
 
-        // Trigger hurt animation on the defender
+        // Hurt animation
         Animator defenderAnim = defender.GetComponent<Animator>();
         if (defenderAnim != null && hurtTrigger != "")
         {
@@ -105,5 +116,23 @@ public class FightController : MonoBehaviour
 
         attacker.sortingOrder = baseSortingOrder;
         defender.sortingOrder = baseSortingOrder;
+    }
+
+
+    void PlaySound(AudioClip clip, float volume, Vector3 position)
+    {
+        if (clip == null) return;
+
+        GameObject tempGO = new GameObject("TempAttackAudio");
+        tempGO.transform.position = position;
+
+        AudioSource source = tempGO.AddComponent<AudioSource>();
+        source.clip = clip;
+        source.volume = volume;
+        source.pitch = Random.Range(minPitch, maxPitch);
+
+        source.Play();
+
+        Destroy(tempGO, clip.length / Mathf.Abs(source.pitch));
     }
 }
