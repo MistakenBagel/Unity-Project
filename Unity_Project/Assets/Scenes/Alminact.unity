@@ -182,8 +182,8 @@ MonoBehaviour:
     we know is he has been through this before, and it probably won\u2019t be the
     last time; he just hopes he makes it home for dinner."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7a03374dad45314b9037b48748634c8, type: 2}
-  m_sharedMaterial: {fileID: -6943421310582077159, guid: b7a03374dad45314b9037b48748634c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
+  m_sharedMaterial: {fileID: 4795249259255610640, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -319,7 +319,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: The Imposter
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7a03374dad45314b9037b48748634c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
   m_sharedMaterial: {fileID: -6943421310582077159, guid: b7a03374dad45314b9037b48748634c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -386,7 +386,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -815.228, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &231599023
@@ -551,7 +551,7 @@ MonoBehaviour:
     succeeded, and now, thanks to their 55th attempt. The Defender, the country has
     never been safer.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7a03374dad45314b9037b48748634c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
   m_sharedMaterial: {fileID: -6943421310582077159, guid: b7a03374dad45314b9037b48748634c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -618,7 +618,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -815.228, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &254639683
@@ -939,7 +939,7 @@ MonoBehaviour:
     strength. It deems the human race unclean and now it vows to completely clean
     the human race.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7a03374dad45314b9037b48748634c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
   m_sharedMaterial: {fileID: -6943421310582077159, guid: b7a03374dad45314b9037b48748634c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1006,7 +1006,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -815.228, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &458720556
@@ -1551,8 +1551,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Gigagecko
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7a03374dad45314b9037b48748634c8, type: 2}
-  m_sharedMaterial: {fileID: -6943421310582077159, guid: b7a03374dad45314b9037b48748634c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
+  m_sharedMaterial: {fileID: 4795249259255610640, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1796,8 +1796,8 @@ MonoBehaviour:
     but its intellect hasn\u2019t grown, and now it is after the shiny Neo New Yorkyo
     Tower."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7a03374dad45314b9037b48748634c8, type: 2}
-  m_sharedMaterial: {fileID: -6943421310582077159, guid: b7a03374dad45314b9037b48748634c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
+  m_sharedMaterial: {fileID: 4795249259255610640, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2223,10 +2223,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Next
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
+  m_sharedMaterial: {fileID: 4795249259255610640, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2441,7 +2441,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Mothership
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7a03374dad45314b9037b48748634c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
   m_sharedMaterial: {fileID: -6943421310582077159, guid: b7a03374dad45314b9037b48748634c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2508,7 +2508,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -815.228, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1353533515
@@ -2578,7 +2578,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: The Giggler
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7a03374dad45314b9037b48748634c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
   m_sharedMaterial: {fileID: -6943421310582077159, guid: b7a03374dad45314b9037b48748634c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2645,7 +2645,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -815.228, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1485050722
@@ -2913,7 +2913,7 @@ MonoBehaviour:
     Earth, and they decided it was perfect. There was only one problem: they had
     to conquer it first. '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7a03374dad45314b9037b48748634c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
   m_sharedMaterial: {fileID: -6943421310582077159, guid: b7a03374dad45314b9037b48748634c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2980,7 +2980,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -815.228, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1618778017
@@ -3050,8 +3050,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'The Businessman '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7a03374dad45314b9037b48748634c8, type: 2}
-  m_sharedMaterial: {fileID: -6943421310582077159, guid: b7a03374dad45314b9037b48748634c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
+  m_sharedMaterial: {fileID: 4795249259255610640, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3165,7 +3165,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.83, y: -3.5299997}
+  m_AnchoredPosition: {x: 7.52, y: -3.5299997}
   m_SizeDelta: {x: 160, y: 112.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1700579269
@@ -3341,7 +3341,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: The Defender
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7a03374dad45314b9037b48748634c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
   m_sharedMaterial: {fileID: -6943421310582077159, guid: b7a03374dad45314b9037b48748634c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3408,7 +3408,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -815.228, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1744487180
@@ -3481,7 +3481,7 @@ MonoBehaviour:
     be corrupted, so the model was powered down and scrapped. Late one night, the
     AI powered itself back on, and now it seeks revenge on its \u201Cbetter model.\u201D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7a03374dad45314b9037b48748634c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
   m_sharedMaterial: {fileID: -6943421310582077159, guid: b7a03374dad45314b9037b48748634c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3548,7 +3548,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -815.228, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1748690228
@@ -3623,7 +3623,7 @@ MonoBehaviour:
     both feast and famine, love and loss, life and death. The power of God and the
     forces of hell in one, divine, demonic, perfect being.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7a03374dad45314b9037b48748634c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
   m_sharedMaterial: {fileID: -6943421310582077159, guid: b7a03374dad45314b9037b48748634c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3690,7 +3690,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -815.228, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1905998335
@@ -3760,7 +3760,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: The Goo Beast
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7a03374dad45314b9037b48748634c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a50b6ffec836d014ca489f64376bf7f4, type: 2}
   m_sharedMaterial: {fileID: -6943421310582077159, guid: b7a03374dad45314b9037b48748634c8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3827,7 +3827,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -815.228, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1916733871
@@ -3875,7 +3875,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 773, y: -421}
+  m_AnchoredPosition: {x: -709, y: -421}
   m_SizeDelta: {x: 241.1036, y: 107.1474}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2012159844
